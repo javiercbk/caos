@@ -1,0 +1,106 @@
+# depslib dependency file v1.0
+1318202646 source:/home/chuby/workspace/caos/caos/main.cpp
+	<iostream>
+
+1318728904 source:/home/chuby/workspace/caos/caos/src/PCB.cpp
+	"../include/PCB.h"
+
+1318728882 /home/chuby/workspace/caos/caos/include/PCB.h
+	<vector>
+	<string>
+	"../include/Processor.h"
+
+1318388490 source:/home/chuby/workspace/caos/caos/src/Process.cpp
+	"../include/Process.h"
+
+1318393448 /home/chuby/workspace/caos/caos/include/Process.h
+	<vector>
+	"../include/PCB.h"
+
+1318779169 source:/home/chuby/workspace/caos/caos/test/PCBTest.cpp
+	"PCBTest.h"
+
+1318476047 /home/chuby/workspace/caos/caos/include/Processor.h
+	<string>
+	"../include/Dispatcher.h"
+	"../include/Process.h"
+
+1318389013 source:/home/chuby/workspace/caos/caos/src/Dispatcher.cpp
+	"../include/Dispatcher.h"
+
+1318476025 /home/chuby/workspace/caos/caos/include/Dispatcher.h
+
+1318390183 source:/home/chuby/workspace/caos/caos/src/FCB.cpp
+	"../include/FCB.h"
+
+1318390403 /home/chuby/workspace/caos/caos/include/FCB.h
+	<string>
+	<vector>
+	"../include/PCB.h"
+
+1318474202 source:/home/chuby/workspace/caos/caos/src/Processor.cpp
+	"../include/Processor.h"
+
+1318723934 source:/home/chuby/workspace/caos/caos/src/scheduler/RoundRobinScheduler.cpp
+	"../../include/Process.h"
+	"../../include/scheduler/RoundRobinScheduler.h"
+
+1318724264 /home/chuby/workspace/caos/caos/include/scheduler/RoundRobinScheduler.h
+	"../../include/scheduler/Scheduler.h"
+	<queue>
+
+1318723952 /home/chuby/workspace/caos/caos/include/AbstractScheduler.h
+	"../include/Process.h"
+
+1318473753 source:/home/chuby/workspace/caos/caos/src/AbstractScheduler.cpp
+	"../include/AbstractScheduler.h"
+
+1318726198 /home/chuby/workspace/caos/caos/include/scheduler/Scheduler.h
+	"../../include/Process.h"
+
+1318787337 source:/home/chuby/workspace/caos/caos/src/Kernel.cpp
+	"../include/Kernel.h"
+
+1318726185 /home/chuby/workspace/caos/caos/include/Kernel.h
+	"../include/Dispatcher.h"
+	"../include/scheduler/Scheduler.h"
+
+1318728080 source:/home/chuby/workspace/caos/caos/src/KernelConfig.cpp
+	"../include/KernelConfig.h"
+
+1318726691 /home/chuby/workspace/caos/caos/include/KernelConfig.h
+	"../include/Kernel.h"
+	"../include/scheduler/Scheduler.h"
+	"../include/scheduler/SchedulerFactory.h"
+
+1318728014 /home/chuby/workspace/caos/caos/include/scheduler/SchedulerFactory.h
+	"../../include/scheduler/Scheduler.h"
+	"../../include/scheduler/RoundRobinScheduler.h"
+
+1318727199 source:/home/chuby/workspace/caos/caos/src/scheduler/SchedulerFactory.cpp
+	"../../include/scheduler/SchedulerFactory.h"
+
+1318728278 /home/chuby/workspace/caos/caos/test/PCBTest.h
+	"gtest/gtest.h"
+	"../include/KernelConfig.h"
+	"../include/Kernel.h"
+	"../include/scheduler/SchedulerFactory.h"
+	"../include/PCB.h"
+
+1318787529 source:/home/chuby/workspace/caos/caos/test/RoundRobinTest.cpp
+	"RoundRobinTest.h"
+
+1318788494 /home/chuby/workspace/caos/caos/test/RoundRobinTest.h
+	"gtest/gtest.h"
+	"../include/KernelConfig.h"
+	"../include/Kernel.h"
+	"../include/scheduler/SchedulerFactory.h"
+	"../include/PCB.h"
+	"../include/Process.h"
+	<queue>
+
+1318779218 source:/home/chuby/workspace/caos/caos/test/TestSuite.cpp
+	"gtest/gtest.h"
+	"PCBTest.h"
+	"RoundRobinTest.h"
+
