@@ -1,14 +1,14 @@
 #include "../include/Dispatcher.h"
-namespace os{
+namespace os {
 
-Dispatcher::Dispatcher()
-{
-  //ctor
-}
+	Dispatcher::Dispatcher()
+	{
+		//ctor
+	}
 
-Dispatcher::~Dispatcher()
-{
-  //dtor
-}
+	Dispatcher::~Dispatcher()
+	{
+		//dtor
+	}
 
 }

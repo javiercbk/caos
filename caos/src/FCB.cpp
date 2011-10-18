@@ -1,9 +1,9 @@
 #include "../include/FCB.h"
 
-namespace os{
-FCB::FCB()
-{
-  //ctor
-}
+namespace os {
+	FCB::FCB()
+	{
+		//ctor
+	}
 
 }

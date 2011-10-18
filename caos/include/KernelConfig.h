@@ -7,14 +7,14 @@
 
 class KernelConfig
 {
-  public:
-    KernelConfig();
-    virtual ~KernelConfig();
-    void configureKernel(os::Kernel* kernel);
-    void setShortSchedulerType(os::SchedulerType type);
-  protected:
-  private:
-    os::SchedulerType shortSchedulerType;
+	public:
+		KernelConfig();
+		virtual ~KernelConfig();
+		void configureKernel(os::Kernel* kernel);
+		void setShortSchedulerType(os::SchedulerType type);
+	protected:
+	private:
+		os::SchedulerType shortSchedulerType;
 };
 
 #endif // KERNELCONFIG_H

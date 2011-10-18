@@ -3,28 +3,28 @@
 
 #include "../include/Dispatcher.h"
 #include "../include/scheduler/Scheduler.h"
-namespace os{
+namespace os {
 
-class Kernel
-{
-  public:
-    Kernel();
-    virtual ~Kernel();
-    void boot();
-    Dispatcher* getDispatcher();
-    Scheduler* getShortScheduler();
-    Scheduler* getLongScheduler();
-    int getMultiprogrammingDegree();
-    void setDispatcher(Dispatcher* dispatcher);
-    void setShortScheduler(Scheduler* scheduler);
-    void setLongScheduler(Scheduler* scheduler);
-    void setMultiprogrammingDegree(int mpd);
-  private:
-    Dispatcher* dispatcher;
-    Scheduler* shortScheduler;
-    Scheduler* longScheduler;
-    int multiprogrammingDegree;
-};
+	class Kernel
+	{
+		public:
+			Kernel();
+			virtual ~Kernel();
+			void boot();
+			Dispatcher* getDispatcher();
+			Scheduler* getShortScheduler();
+			Scheduler* getLongScheduler();
+			int getMultiprogrammingDegree();
+			void setDispatcher(Dispatcher* dispatcher);
+			void setShortScheduler(Scheduler* scheduler);
+			void setLongScheduler(Scheduler* scheduler);
+			void setMultiprogrammingDegree(int mpd);
+		private:
+			Dispatcher* dispatcher;
+			Scheduler* shortScheduler;
+			Scheduler* longScheduler;
+			int multiprogrammingDegree;
+	};
 
 }
 

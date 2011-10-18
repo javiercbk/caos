@@ -11,12 +11,12 @@
 
 class RoundRobinTest : public testing::Test
 {
-  protected:
-    virtual void SetUp();
-    virtual void TearDown();
-    os::Kernel* kernel;
-    std::queue<os::Process*> processQueue;
-    os::Process* makeRandomProcess();
+	protected:
+		virtual void SetUp();
+		virtual void TearDown();
+		os::Kernel* kernel;
+		std::queue<os::Process*> processQueue;
+		os::Process* makeRandomProcess();
 };
 
 #endif // ROUNDROBINTEST_H

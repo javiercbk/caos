@@ -2,22 +2,22 @@
 
 KernelConfig::KernelConfig()
 {
-  //ctor
+	//ctor
 }
 
 KernelConfig::~KernelConfig()
 {
-  //dtor
+	//dtor
 }
 
-void KernelConfig::configureKernel(os::Kernel* kernel){
-  os::SchedulerFactory* schedFactory = new os::SchedulerFactory();
-  os::Scheduler* shortScheduler = schedFactory->getScheduler(this->shortSchedulerType);;
-  kernel->setShortScheduler(shortScheduler);
+void KernelConfig::configureKernel(os::Kernel* kernel) {
+	os::SchedulerFactory* schedFactory = new os::SchedulerFactory();
+	os::Scheduler* shortScheduler = schedFactory->getScheduler(this->shortSchedulerType);;
+	kernel->setShortScheduler(shortScheduler);
 }
 
-void KernelConfig::setShortSchedulerType(os::SchedulerType type){
-  this->shortSchedulerType = type;
+void KernelConfig::setShortSchedulerType(os::SchedulerType type) {
+	this->shortSchedulerType = type;
 }
 
 

@@ -4,14 +4,14 @@
 
 #include "../../include/Process.h"
 
-namespace os{
+namespace os {
 
 
-class Scheduler {
-  public:
-    virtual Process* getNextProcess() = 0;
-    virtual void pushProcess(Process* process) = 0;
-};
+	class Scheduler {
+		public:
+			virtual Process* getNextProcess() = 0;
+			virtual void pushProcess(Process* process) = 0;
+	};
 
 }
 #endif // ABSTRACTSCHEDULER_H

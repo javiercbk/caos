@@ -7,11 +7,11 @@
 #include "../include/scheduler/SchedulerFactory.h"
 #include "../include/PCB.h"
 
-class PCBTest : public testing::Test{
-  protected:
-  os::PCB* pcb;
-  virtual void SetUp();
-  virtual void TearDown();
+class PCBTest : public testing::Test {
+	protected:
+		os::PCB* pcb;
+		virtual void SetUp();
+		virtual void TearDown();
 
 };
 

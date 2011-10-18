@@ -1,12 +1,12 @@
 #include "../../include/scheduler/SchedulerFactory.h"
 
-namespace os{
+namespace os {
 
-Scheduler* SchedulerFactory::getScheduler(SchedulerType type){
-  if(type == ROUND_ROBIN){
-    return new RoundRobinScheduler();
-  }
-  return NULL;
-}
+	Scheduler* SchedulerFactory::getScheduler(SchedulerType type) {
+		if(type == ROUND_ROBIN) {
+				return new RoundRobinScheduler();
+			}
+		return NULL;
+	}
 
 }
