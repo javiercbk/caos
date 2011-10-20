@@ -7,6 +7,12 @@
 	<File name="include/FCB.h" open="0" top="0" tabpos="0">
 		<Cursor position="829" topLine="13" />
 	</File>
+	<File name="include/IO/FCFSIOScheduler.h" open="1" top="0" tabpos="1">
+		<Cursor position="220" topLine="0" />
+	</File>
+	<File name="include/IO/IOScheduler.h" open="1" top="0" tabpos="3">
+		<Cursor position="354" topLine="0" />
+	</File>
 	<File name="include/Kernel.h" open="0" top="0" tabpos="2">
 		<Cursor position="387" topLine="0" />
 	</File>
@@ -37,6 +43,12 @@
 	<File name="src/FCB.cpp" open="0" top="0" tabpos="0">
 		<Cursor position="21" topLine="0" />
 	</File>
+	<File name="src/IO/FCFSIOScheduler.cpp" open="1" top="0" tabpos="2">
+		<Cursor position="45" topLine="0" />
+	</File>
+	<File name="src/IO/IOScheduler.cpp" open="1" top="0" tabpos="4">
+		<Cursor position="61" topLine="0" />
+	</File>
 	<File name="src/Kernel.cpp" open="0" top="0" tabpos="3">
 		<Cursor position="213" topLine="13" />
 	</File>
@@ -52,7 +64,7 @@
 	<File name="src/Processor.cpp" open="0" top="0" tabpos="0">
 		<Cursor position="1110" topLine="21" />
 	</File>
-	<File name="src/scheduler/RoundRobinScheduler.cpp" open="1" top="1" tabpos="0">
+	<File name="src/scheduler/RoundRobinScheduler.cpp" open="0" top="0" tabpos="0">
 		<Cursor position="569" topLine="3" />
 	</File>
 	<File name="src/scheduler/SchedulerFactory.cpp" open="0" top="0" tabpos="0">

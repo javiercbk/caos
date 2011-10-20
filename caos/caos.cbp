@@ -56,16 +56,21 @@
 		</Compiler>
 		<Unit filename="include/Dispatcher.h" />
 		<Unit filename="include/FCB.h" />
+		<Unit filename="include/IO/FCFSIOScheduler.h" />
+		<Unit filename="include/IO/IOScheduler.h" />
 		<Unit filename="include/Kernel.h" />
 		<Unit filename="include/KernelConfig.h" />
 		<Unit filename="include/PCB.h" />
 		<Unit filename="include/Process.h" />
 		<Unit filename="include/Processor.h" />
+		<Unit filename="include/memory/RAMBus.h" />
 		<Unit filename="include/scheduler/RoundRobinScheduler.h" />
 		<Unit filename="include/scheduler/Scheduler.h" />
 		<Unit filename="include/scheduler/SchedulerFactory.h" />
 		<Unit filename="src/Dispatcher.cpp" />
 		<Unit filename="src/FCB.cpp" />
+		<Unit filename="src/IO/FCFSIOScheduler.cpp" />
+		<Unit filename="src/IO/IOScheduler.cpp" />
 		<Unit filename="src/Kernel.cpp" />
 		<Unit filename="src/KernelConfig.cpp" />
 		<Unit filename="src/PCB.cpp" />
@@ -73,6 +78,7 @@
 		<Unit filename="src/Processor.cpp">
 			<Option weight="39" />
 		</Unit>
+		<Unit filename="src/memory/RAMBus.cpp" />
 		<Unit filename="src/scheduler/RoundRobinScheduler.cpp">
 			<Option weight="48" />
 		</Unit>

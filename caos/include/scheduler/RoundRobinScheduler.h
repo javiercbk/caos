@@ -11,10 +11,10 @@ namespace os {
 			RoundRobinScheduler();
 			virtual ~RoundRobinScheduler();
 			Process* getNextProcess();
-			std::queue<Process*> getProcessQueue();
+			std::queue<Process*>* getProcessQueue();
 			void pushProcess(Process* process);
 		private:
-			std::queue<Process*> processQueue;
+			std::queue<Process*>* processQueue;
 
 	};
 
