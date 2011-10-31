@@ -42,7 +42,7 @@ namespace os {
 		private:
 			unsigned int fid;
 			std::string fileName;
-			std::vector<FileConsumer> fileConsumers;
+			std::vector<FileConsumer*> fileConsumers;
 	};
 
 }

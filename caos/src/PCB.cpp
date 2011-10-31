@@ -9,11 +9,12 @@ namespace os {
 		this->ip = 0;
 		this->nice = 20;
 		this->qExecuted = 0;
-		std::vector<pc::CPUReg> registers;
-		this->registros = registers;
+		this->registros = new std::vector<pc::CPUReg*>();
 	}
 
-
+  PCB::~PCB(){
+    delete registros;
+  }
 	unsigned int PCB::getPid() {
 		return this->pid;
 	}
@@ -30,7 +31,7 @@ namespace os {
 		return this->qExecuted;
 	}
 
-	std::vector<pc::CPUReg> PCB::getRegistros() {
+	std::vector<pc::CPUReg*>* PCB::getRegistros() {
 		return this->registros;
 	}
 
@@ -50,12 +51,28 @@ namespace os {
 		this->qExecuted = qExecuted;
 	}
 
-	void PCB::setRegistros(std::vector<pc::CPUReg> registros) {
+	void PCB::setRegistros(std::vector<pc::CPUReg*>* registros) {
 		this->registros = registros;
 	}
 
 	void PCB::setEstado(Estado estado) {
 		this->estado = estado;
 	}
+
+	unsigned long PCB::getBase(){
+    return this->base;
+	}
+
+  unsigned long PCB::getLimit(){
+    return this->limit;
+  }
+
+  void PCB::setBase(unsigned long base){
+    this->base = base;
+  }
+
+  void PCB::setLimit(unsigned long limit){
+    this->limit = limit;
+  }
 
 }

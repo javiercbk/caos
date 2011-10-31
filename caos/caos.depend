@@ -2,10 +2,10 @@
 1318202646 source:/home/chuby/workspace/caos/caos/main.cpp
 	<iostream>
 
-1318820423 source:/home/chuby/workspace/caos/caos/src/PCB.cpp
+1319324114 source:/home/chuby/workspace/caos/caos/src/PCB.cpp
 	"../include/PCB.h"
 
-1318820439 /home/chuby/workspace/caos/caos/include/PCB.h
+1319324106 /home/chuby/workspace/caos/caos/include/PCB.h
 	<vector>
 	<string>
 	"../include/Processor.h"
@@ -20,7 +20,7 @@
 1318820421 source:/home/chuby/workspace/caos/caos/test/PCBTest.cpp
 	"PCBTest.h"
 
-1318820437 /home/chuby/workspace/caos/caos/include/Processor.h
+1320016405 /home/chuby/workspace/caos/caos/include/Processor.h
 	<string>
 	"../include/Dispatcher.h"
 	"../include/Process.h"
@@ -28,12 +28,12 @@
 1318820420 source:/home/chuby/workspace/caos/caos/src/Dispatcher.cpp
 	"../include/Dispatcher.h"
 
-1318820445 /home/chuby/workspace/caos/caos/include/Dispatcher.h
+1319393240 /home/chuby/workspace/caos/caos/include/Dispatcher.h
 
 1318820422 source:/home/chuby/workspace/caos/caos/src/FCB.cpp
 	"../include/FCB.h"
 
-1318820442 /home/chuby/workspace/caos/caos/include/FCB.h
+1319393268 /home/chuby/workspace/caos/caos/include/FCB.h
 	<string>
 	<vector>
 	"../include/PCB.h"
@@ -61,14 +61,14 @@
 1318820446 source:/home/chuby/workspace/caos/caos/src/Kernel.cpp
 	"../include/Kernel.h"
 
-1318820438 /home/chuby/workspace/caos/caos/include/Kernel.h
+1319393386 /home/chuby/workspace/caos/caos/include/Kernel.h
 	"../include/Dispatcher.h"
 	"../include/scheduler/Scheduler.h"
 
 1318820423 source:/home/chuby/workspace/caos/caos/src/KernelConfig.cpp
 	"../include/KernelConfig.h"
 
-1318820440 /home/chuby/workspace/caos/caos/include/KernelConfig.h
+1319393506 /home/chuby/workspace/caos/caos/include/KernelConfig.h
 	"../include/Kernel.h"
 	"../include/scheduler/Scheduler.h"
 	"../include/scheduler/SchedulerFactory.h"
@@ -135,11 +135,112 @@
 	"../include/IO/FCFSIOScheduler.h"
 	<queue>
 
-1319086115 source:/home/chuby/workspace/caos/caos/src/memory/BaseRegistryTranslator.cpp
+1320018020 source:/home/chuby/workspace/caos/caos/src/memory/BaseRegistryTranslator.cpp
 	"../../include/memory/BaseRegistryTranslator.h"
 
-1319086123 /home/chuby/workspace/caos/caos/include/memory/BaseRegistryTranslator.h
+1320018012 /home/chuby/workspace/caos/caos/include/memory/BaseRegistryTranslator.h
 	"../../include/memory/TranslationStrategy.h"
 
-1319086159 /home/chuby/workspace/caos/caos/include/memory/TranslationStrategy.h
+1320018004 /home/chuby/workspace/caos/caos/include/memory/TranslationStrategy.h
+	"../../include/memory/InvalidAddressException.h"
+	"../../include/PCB.h"
+
+1320019707 source:/home/chuby/workspace/caos/caos/test/BaseRegistryTranslatorTest.cpp
+	"BaseRegistryTranslatorTest.h"
+	"../include/memory/BaseRegistryTranslator.h"
+
+1320019665 /home/chuby/workspace/caos/caos/test/BaseRegistryTranslatorTest.h
+	"gtest/gtest.h"
+	"../include/memory/TranslationStrategy.h"
+	"../include/PCB.h"
+
+1319228413 source:/home/chuby/workspace/caos/caos/src/CAOSHelper.cpp
+	"../include/CAOSHelper.h"
+
+1319393119 /home/chuby/workspace/caos/caos/include/CAOSHelper.h
+	<string>
+
+1319246653 source:/home/chuby/workspace/caos/caos/src/BUS.cpp
+	"../include/BUS.h"
+
+1319392606 /home/chuby/workspace/caos/caos/include/BUS.h
+	"../include/BusListener.h"
+	<vector>
+
+1319392718 /home/chuby/workspace/caos/caos/include/BusListener.h
+
+1319246785 source:/home/chuby/workspace/caos/caos/src/BusWritter.cpp
+	"../include/BusWritter.h"
+
+1319392912 /home/chuby/workspace/caos/caos/include/BusWritter.h
+	"../include/BUS.h"
+
+1319247310 /home/chuby/workspace/caos/caos/include/memory/InvalidAddressException.h
+	<exception>
+	"../../include/Process.h"
+
+1319247321 source:/home/chuby/workspace/caos/caos/src/memory/InvalidAddressException.cpp
+	"../../include/memory/InvalidAddressException.h"
+
+1319324254 source:/home/chuby/workspace/caos/caos/src/memory/MMU.cpp
+	"../../include/memory/MMU.h"
+
+1320018078 /home/chuby/workspace/caos/caos/include/memory/MMU.h
+	"../../include/memory/TranslationStrategy.h"
+	"../../include/memory/SegmentationFaultException.h"
+	"../../include/Process.h"
+	"../../include/BusWritter.h"
+	"../../include/memory/TLB.h"
+
+1319249164 /home/chuby/workspace/caos/caos/include/memory/SegmentationFaultException.h
+	"../../include/Process.h"
+
+1319249156 source:/home/chuby/workspace/caos/caos/src/memory/SegmentationFaultException.cpp
+	"../../include/memory/SegmentationFaultException.h"
+
+1319323996 source:/home/chuby/workspace/caos/caos/test/BUSTest.cpp
+	"BUSTest.h"
+
+1319322046 /home/chuby/workspace/caos/caos/test/BUSTest.h
+	"gtest/gtest.h"
+	"../include/BUS.h"
+	"../include/BusListener.h"
+	"../include/BusWritter.h"
+	<vector>
+	<algorithm>
+
+1320019055 /home/chuby/workspace/caos/caos/include/memory/TLB.h
+	"../../include/Process.h"
+
+1320024705 source:/home/chuby/workspace/caos/caos/src/memory/PageFrame.cpp
+	"../../include/memory/PageFrame.h"
+
+1320023956 /home/chuby/workspace/caos/caos/include/memory/PageFrame.h
+
+1320025007 source:/home/chuby/workspace/caos/caos/src/memory/PagingTranslator.cpp
+	"../../include/memory/PagingTranslator.h"
+
+1320022047 /home/chuby/workspace/caos/caos/include/memory/PagingTranslator.h
+	"../../include/memory/TranslationStrategy.h"
+	"../../include/memory/PageFrame.h"
+	"../../include/PCB.h"
+
+1320018996 source:/home/chuby/workspace/caos/caos/src/memory/Segment.cpp
+	"../../include/memory/Segment.h"
+
+1320018979 /home/chuby/workspace/caos/caos/include/memory/Segment.h
+
+1320019648 source:/home/chuby/workspace/caos/caos/src/memory/TLB.cpp
+	"../../include/memory/TLB.h"
+
+1320026522 source:/home/chuby/workspace/caos/caos/test/PagingTranslatorTest.cpp
+	"PagingTranslatorTest.h"
+	"../include/memory/PagingTranslator.h"
+	"../include/memory/PageFrame.h"
+
+1320026510 /home/chuby/workspace/caos/caos/test/PagingTranslatorTest.h
+	"gtest/gtest.h"
+	"../include/memory/TranslationStrategy.h"
+	"../include/memory/PageFrame.h"
+	"../include/PCB.h"
 

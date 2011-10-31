@@ -54,6 +54,10 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/BUS.h" />
+		<Unit filename="include/BusListener.h" />
+		<Unit filename="include/BusWritter.h" />
+		<Unit filename="include/CAOSHelper.h" />
 		<Unit filename="include/Dispatcher.h" />
 		<Unit filename="include/FCB.h" />
 		<Unit filename="include/IO/FCFSIOScheduler.h" />
@@ -63,30 +67,76 @@
 		<Unit filename="include/PCB.h" />
 		<Unit filename="include/Process.h" />
 		<Unit filename="include/Processor.h" />
-		<Unit filename="include/memory/RAMBus.h" />
+		<Unit filename="include/memory/BaseRegistryTranslator.h" />
+		<Unit filename="include/memory/InvalidAddressException.h" />
+		<Unit filename="include/memory/MMU.h" />
+		<Unit filename="include/memory/PageFrame.h" />
+		<Unit filename="include/memory/PagingTranslator.h" />
+		<Unit filename="include/memory/Segment.h" />
+		<Unit filename="include/memory/SegmentationFaultException.h" />
+		<Unit filename="include/memory/TLB.h" />
+		<Unit filename="include/memory/TranslationStrategy.h" />
 		<Unit filename="include/scheduler/RoundRobinScheduler.h" />
 		<Unit filename="include/scheduler/Scheduler.h" />
 		<Unit filename="include/scheduler/SchedulerFactory.h" />
+		<Unit filename="src/BUS.cpp" />
+		<Unit filename="src/BusWritter.cpp" />
+		<Unit filename="src/CAOSHelper.cpp" />
 		<Unit filename="src/Dispatcher.cpp" />
 		<Unit filename="src/FCB.cpp" />
 		<Unit filename="src/IO/FCFSIOScheduler.cpp" />
 		<Unit filename="src/IO/IOScheduler.cpp" />
 		<Unit filename="src/Kernel.cpp" />
 		<Unit filename="src/KernelConfig.cpp" />
+		<Unit filename="src/Main.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
 		<Unit filename="src/PCB.cpp" />
 		<Unit filename="src/Process.cpp" />
 		<Unit filename="src/Processor.cpp">
 			<Option weight="39" />
 		</Unit>
-		<Unit filename="src/memory/RAMBus.cpp" />
+		<Unit filename="src/memory/BaseRegistryTranslator.cpp" />
+		<Unit filename="src/memory/InvalidAddressException.cpp" />
+		<Unit filename="src/memory/MMU.cpp" />
+		<Unit filename="src/memory/PageFrame.cpp" />
+		<Unit filename="src/memory/PagingTranslator.cpp" />
+		<Unit filename="src/memory/Segment.cpp" />
+		<Unit filename="src/memory/SegmentationFaultException.cpp" />
+		<Unit filename="src/memory/TLB.cpp" />
 		<Unit filename="src/scheduler/RoundRobinScheduler.cpp">
 			<Option weight="48" />
 		</Unit>
 		<Unit filename="src/scheduler/SchedulerFactory.cpp" />
+		<Unit filename="test/BUSTest.cpp">
+			<Option target="Test" />
+		</Unit>
+		<Unit filename="test/BUSTest.h">
+			<Option target="Test" />
+		</Unit>
+		<Unit filename="test/BaseRegistryTranslatorTest.cpp">
+			<Option target="Test" />
+		</Unit>
+		<Unit filename="test/BaseRegistryTranslatorTest.h">
+			<Option target="Test" />
+		</Unit>
+		<Unit filename="test/FCFSTest.cpp">
+			<Option target="Test" />
+		</Unit>
+		<Unit filename="test/FCFSTest.h">
+			<Option target="Test" />
+		</Unit>
 		<Unit filename="test/PCBTest.cpp">
 			<Option target="Test" />
 		</Unit>
 		<Unit filename="test/PCBTest.h">
+			<Option target="Test" />
+		</Unit>
+		<Unit filename="test/PagingTranslatorTest.cpp">
+			<Option target="Test" />
+		</Unit>
+		<Unit filename="test/PagingTranslatorTest.h">
 			<Option target="Test" />
 		</Unit>
 		<Unit filename="test/RoundRobinTest.cpp">

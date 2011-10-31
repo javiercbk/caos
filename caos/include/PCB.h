@@ -38,24 +38,31 @@ namespace os {
 	{
 		public:
 			PCB(int pid);
+			~PCB();
 			unsigned int getPid();
 			unsigned int getIp();
 			unsigned int getNice();
 			unsigned int getQExecuted();
-			std::vector<pc::CPUReg> getRegistros();
+			std::vector<pc::CPUReg*>* getRegistros();
 			Estado getEstado();
 			void setIp(unsigned int);
 			void setNice(unsigned int);
 			void setQExecuted(unsigned int);
-			void setRegistros(std::vector<pc::CPUReg>);
+			void setRegistros(std::vector<pc::CPUReg*>*);
 			void setEstado(Estado);
+			unsigned long getBase();
+			unsigned long getLimit();
+			void setBase(unsigned long base);
+			void setLimit(unsigned long limit);
 		protected:
 			Estado estado;
 			unsigned int pid;
 			unsigned int ip;
 			unsigned int nice;
 			unsigned int qExecuted;
-			std::vector<pc::CPUReg> registros;
+			unsigned long base;
+			unsigned long limit;
+			std::vector<pc::CPUReg*>* registros;
 			//TODO agregar los recursos utilizados
 		private:
 	};
