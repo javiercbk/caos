@@ -9,11 +9,9 @@ namespace pc{
 class InvalidAddressException : public std::exception
 {
   public:
-    InvalidAddressException(os::Process* causedBy, long address);
-    os::Process* getCausedBy();
+    InvalidAddressException(long address);
     long getAddressAtempted();
   private:
-    os::Process* causedBy;
     long addressAtempted;
 };
 

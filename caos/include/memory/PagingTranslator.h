@@ -2,16 +2,16 @@
 #define PAGINGTRANSLATOR_H
 
 #include "../../include/memory/TranslationStrategy.h"
-#include "../../include/memory/PageFrame.h"
+#include "../../include/memory/ProcessPage.h"
 #include "../../include/PCB.h"
 
 namespace pc{
 
-class PagingTranslator : public TranslationStrategy<os::PageFrame*>
+class PagingTranslator : public TranslationStrategy<os::ProcessPage*>
 {
     public:
         PagingTranslator(int bitsDirectory, int bitPage, int bitsOffset, int wordSize);
-        os::PageFrame* translateDecimalDirection(os::PCB* pcb, long logicalDirection) throw(InvalidAddressException);
+        os::ProcessPage* translateDecimalDirection(unsigned long long base, unsigned long long logicalDirection) throw(InvalidAddressException);
         int getBitsDirectory();
         int getBitsPage();
         int getBitsOffset();
@@ -21,7 +21,7 @@ class PagingTranslator : public TranslationStrategy<os::PageFrame*>
         int bitsPage;
         int bitsOffset;
         int wordSize;
-        int extractDecimalFromBits(int number, int bitsToClear, int backbits);
+        unsigned long long extractDecimalFromBits(unsigned long long number, int bitsToClear, int backbits);
 };
 
 }

@@ -6,6 +6,7 @@
 #include "../../include/Process.h"
 #include "../../include/BusWritter.h"
 #include "../../include/memory/TLB.h"
+#include "../../include/BUS.h"
 
 namespace pc{
 
@@ -13,14 +14,14 @@ template<class T>
 class MMU : public BusWritter
 {
   public:
-    MMU(long manageSize, TranslationStrategy<T>* strategy);
+    MMU(long manageSize, TranslationStrategy<T>* strategy, BUS* bus);
     ~MMU();
-    void getAddress(os::Process* process, long virtualAddress);
+    T getAddress(long virtualAddress);
   private:
-    long memSize;
+    unsigned long long memSize;
     TLB<T>* tlb;
     TranslationStrategy<T>* transStrategy;
-
+    BUS* bus;
 };
 
 }

@@ -1,8 +1,11 @@
 #ifndef KERNEL_H
 #define KERNEL_H
 
+#include <list>
 #include "../include/Dispatcher.h"
 #include "../include/scheduler/Scheduler.h"
+#include "../include/memory/KernelMemoryManager.h"
+
 namespace os {
 
 /**
@@ -26,11 +29,15 @@ namespace os {
 			void setShortScheduler(Scheduler* scheduler);
 			void setLongScheduler(Scheduler* scheduler);
 			void setMultiprogrammingDegree(int mpd);
+			std::list<PCB*> getPcbs();
 		private:
 			Dispatcher* dispatcher;
 			Scheduler* shortScheduler;
 			Scheduler* longScheduler;
+			KernelMemoryManager* memoryManager;
 			int multiprogrammingDegree;
+			std::list<PCB*> pcbs;
+
 	};
 
 }

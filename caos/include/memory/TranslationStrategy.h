@@ -16,7 +16,7 @@ template<class T>
 class TranslationStrategy
 {
   public:
-    virtual T translateDecimalDirection(os::PCB* pcb, long logicalDirection) throw(InvalidAddressException) = 0;
+    virtual T translateDecimalDirection(unsigned long long base, unsigned long long logicalDirection) throw(InvalidAddressException) = 0;
 };
 
 }

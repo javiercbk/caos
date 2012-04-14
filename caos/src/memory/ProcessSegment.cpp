@@ -11,5 +11,9 @@ ProcessSegment::~ProcessSegment(){
   //dtor
 }
 
+std::vector<ProcessPage*>* ProcessSegment::getPages(){
+    return this->pages;
+}
+
 }
 

@@ -26,7 +26,6 @@ class TLB
     unsigned int usageCost;
     unsigned int size;
     void pointNext();
-    void pointNext(int size);
     void insertTLB(T* cacheElement);
 };
 

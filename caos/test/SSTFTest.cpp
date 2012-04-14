@@ -1,16 +1,15 @@
 #include "SSTFTest.h"
 
 #include "../include/IO/SSTFScheduler.h"
-#include <stdlib.h>
-#include <time.h>
+#include "TestHelper.h"
 
 void SSTFTest::SetUp() {
-    currentBlock = makeRandomBlock();
+    currentBlock = test::TestHelper::makeRandomBlock();
     ioScheduler = new os::SSTFScheduler(currentBlock);
     blockList = new std::list<int>();
     blockList->push_back(currentBlock);
     for(int i = 0; i < 20; i++){
-        int block = makeRandomBlock();
+        int block = test::TestHelper::makeRandomBlock();
         ioScheduler->pushBlock(block);
         blockList->push_back(block);
     }
@@ -21,11 +20,6 @@ void SSTFTest::SetUp() {
 void SSTFTest::TearDown() {
   delete blockList;
   delete ioScheduler;
-}
-
-int SSTFTest::makeRandomBlock(){
-    srand (time(NULL));
-	return rand() % 100 + 1;
 }
 
 void SSTFTest::sortList(){
@@ -68,4 +62,3 @@ TEST_F(SSTFTest, DefaultConstructor) {
         EXPECT_EQ(block, sameBlock);
     }
 }
-int currentBlock;

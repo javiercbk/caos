@@ -11,7 +11,7 @@ class BaseRegistryTranslatorTest : public testing::Test
   protected:
     virtual void SetUp();
 		virtual void TearDown();
-    pc::TranslationStrategy<long>* translatorStrategy;
+    pc::TranslationStrategy<unsigned long long>* translatorStrategy;
     os::PCB* pcb;
 };
 

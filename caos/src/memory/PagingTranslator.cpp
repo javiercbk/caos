@@ -9,9 +9,9 @@ PagingTranslator::PagingTranslator(int bitsDirectory, int bitsPage, int bitsOffs
   this->wordSize = wordSize;
 }
 
-int PagingTranslator::extractDecimalFromBits(int number, int bitsToClear, int backbits){
-  int extractor = 0;
-  int extracted = 0;
+unsigned long long PagingTranslator::extractDecimalFromBits(unsigned long long number, int bitsToClear, int backbits){
+  unsigned long long extractor = 0;
+  unsigned long long extracted = 0;
   int i;
   ///numero binario para obtener el numero a direccionar
   for(i=0;i < bitsToClear; i++){
@@ -24,14 +24,14 @@ int PagingTranslator::extractDecimalFromBits(int number, int bitsToClear, int ba
   return extracted >> backbits;
 }
 
-os::PageFrame* PagingTranslator::translateDecimalDirection(os::PCB* pcb, long logicalDirection) throw(InvalidAddressException){
+os::ProcessPage* PagingTranslator::translateDecimalDirection(unsigned long long base, unsigned long long logicalDirection) throw(InvalidAddressException){
   int dir = logicalDirection >> (bitsPage + bitsOffset);
   int page = this->extractDecimalFromBits(logicalDirection, bitsPage, bitsOffset);
-  int frame = this->extractDecimalFromBits(logicalDirection, bitsOffset, 0);
-  os::PageFrame* pf = new os::PageFrame();
+  int offset = this->extractDecimalFromBits(logicalDirection, bitsOffset, 0);
+  os::ProcessPage* pf = new os::ProcessPage();
   pf->setDirectory(dir);
   pf->setPage(page);
-  pf->setFrame(frame);
+  pf->setOffset(offset);
   return pf;
 }
 

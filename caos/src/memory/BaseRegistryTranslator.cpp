@@ -5,9 +5,9 @@ namespace pc{
 BaseRegistryTranslator::BaseRegistryTranslator(){
 }
 
-long BaseRegistryTranslator::translateDecimalDirection(os::PCB* pcb, long logicalDirection) throw(InvalidAddressException)
+unsigned long long BaseRegistryTranslator::translateDecimalDirection(unsigned long long base, unsigned long long logicalDirection) throw(InvalidAddressException)
 {
-    return pcb->getBase() + logicalDirection;
+    return base + logicalDirection;
 }
 
 }

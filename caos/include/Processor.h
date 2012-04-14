@@ -23,7 +23,7 @@ namespace pc {
 	    @author Javier Lecuona
 	    @date Octubre 2011
 	*/
-	enum Interrupt {ZERO_DIV=0, OVERFLOW=4, RANGE_EXCEPTION=5, INV_OPCODE=6, DEV_NOT_AVAL=7, STACK_FAULT=12, PAGE_FAULT=14, MASCARABLE_INT=32};
+	enum Interrupt {ZERO_DIV=0, OVERFLOW=4, RANGE_EXCEPTION=5, INV_OPCODE=6, DEV_NOT_AVAL=7, STACK_FAULT=12, PAGE_FAULT=14, MASCARABLE_INT=32, SEGMENTATION_FAULT=15};
 
 	/**
 	    @brief Registros de la CPU

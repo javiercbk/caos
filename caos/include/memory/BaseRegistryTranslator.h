@@ -5,11 +5,11 @@
 
 namespace pc {
 
-	class BaseRegistryTranslator : public TranslationStrategy<long>
+	class BaseRegistryTranslator : public TranslationStrategy<unsigned long long>
 	{
 		public:
 			BaseRegistryTranslator();
-			long translateDecimalDirection(os::PCB* pcb, long logicalDirection) throw(InvalidAddressException);
+			unsigned long long translateDecimalDirection(unsigned long long base, unsigned long long logicalDirection) throw(InvalidAddressException);
 	};
 
 }

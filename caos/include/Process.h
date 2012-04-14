@@ -2,12 +2,14 @@
 #define PROCESS_H
 
 #include <vector>
+#include "../include/memory/ProcessPage.h"
 
 namespace os {
 	class PCB;
 }
 
 #include "../include/PCB.h"
+
 
 namespace os {
 	/**
@@ -28,11 +30,12 @@ namespace os {
 			void setPCB(PCB* pcb);
 			void getParent(Process* parent);
 			void getChildren(std::vector<Process*> children);
-		protected:
+			std::vector<ProcessPage*>* getFrames();
 		private:
 			PCB* pcb;
 			Process* parent;
 			std::vector<Process*> children;
+			std::vector<ProcessPage*>* frames;
 	};
 
 }

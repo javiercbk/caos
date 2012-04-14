@@ -34,4 +34,8 @@ namespace os {
 	void Process::getChildren(std::vector<Process*> children) {
 		this->children = children;
 	}
+
+	std::vector<ProcessPage*>* Process::getFrames(){
+        return this->frames;
+	}
 }

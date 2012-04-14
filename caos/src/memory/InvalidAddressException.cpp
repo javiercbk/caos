@@ -2,18 +2,9 @@
 
 namespace pc{
 
-InvalidAddressException::InvalidAddressException(os::Process* causedBy, long address)
+InvalidAddressException::InvalidAddressException(long address)
 {
-  this->causedBy = causedBy;
   this->addressAtempted = address;
-}
-
-
-/** Proceso que pidio una direccion de memoria invalida
- * @return puntero al proceso que causo la excepcion
- */
-os::Process* InvalidAddressException::getCausedBy() {
-  return causedBy;
 }
 
 /** Direccion invalida pedida por el proceso

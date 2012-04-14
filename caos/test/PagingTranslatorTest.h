@@ -4,16 +4,14 @@
 #include "gtest/gtest.h"
 
 #include "../include/memory/TranslationStrategy.h"
-#include "../include/memory/PageFrame.h"
-#include "../include/PCB.h"
+#include "../include/memory/ProcessPage.h"
 
 class PagingTranslatorTest : public testing::Test
 {
   protected:
     virtual void SetUp();
-		virtual void TearDown();
-		pc::TranslationStrategy<os::PageFrame*>* translatorStrategy;
-    os::PCB* pcb;
+    virtual void TearDown();
+    pc::TranslationStrategy<os::ProcessPage*>* translatorStrategy;
 };
 
 #endif // PAGINGTRANSLATORTEST_H

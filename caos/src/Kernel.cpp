@@ -41,4 +41,7 @@ namespace os {
 		this->multiprogrammingDegree = multiprogrammingDegree;
 	}
 
+	std::list<PCB*> Kernel::getPcbs(){
+    return pcbs;
+}
 }
