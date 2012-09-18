@@ -1,4 +1,0 @@
-/Users/javier/Documents/workspace/caos-old/caos/src/CMakeFiles/caos.dir
-/Users/javier/Documents/workspace/caos-old/caos/test/CMakeFiles/caos-test.dir
-/Users/javier/Documents/workspace/caos-old/caos/test/gtest-1.6.0/CMakeFiles/gtest.dir
-/Users/javier/Documents/workspace/caos-old/caos/test/gtest-1.6.0/CMakeFiles/gtest_main.dir
