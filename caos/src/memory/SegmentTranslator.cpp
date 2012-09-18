@@ -1,11 +1,14 @@
+/*
 #include "SegmentTranslator.h"
 
-SegmentTranslator::SegmentTranslator()
+pc::SegmentTranslator::SegmentTranslator()
 {
     //ctor
 }
 
-SegmentTranslator::~SegmentTranslator()
+pc::SegmentTranslator::~SegmentTranslator()
 {
     //dtor
 }
+
+*/
