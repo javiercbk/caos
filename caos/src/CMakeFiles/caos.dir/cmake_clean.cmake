@@ -1,0 +1,40 @@
+FILE(REMOVE_RECURSE
+  "CMakeFiles/caos.dir/BUS.cpp.o"
+  "CMakeFiles/caos.dir/BusWritter.cpp.o"
+  "CMakeFiles/caos.dir/CAOSHelper.cpp.o"
+  "CMakeFiles/caos.dir/Dispatcher.cpp.o"
+  "CMakeFiles/caos.dir/FCB.cpp.o"
+  "CMakeFiles/caos.dir/FileSystem/FileSystem.cpp.o"
+  "CMakeFiles/caos.dir/IO/Disk.cpp.o"
+  "CMakeFiles/caos.dir/IO/FCFSIOScheduler.cpp.o"
+  "CMakeFiles/caos.dir/IO/IOScheduler.cpp.o"
+  "CMakeFiles/caos.dir/IO/SSTFScheduler.cpp.o"
+  "CMakeFiles/caos.dir/Kernel.cpp.o"
+  "CMakeFiles/caos.dir/KernelConfig.cpp.o"
+  "CMakeFiles/caos.dir/Main.cpp.o"
+  "CMakeFiles/caos.dir/memory/BaseRegistryTranslator.cpp.o"
+  "CMakeFiles/caos.dir/memory/InvalidAddressException.cpp.o"
+  "CMakeFiles/caos.dir/memory/KernelMemoryManager.cpp.o"
+  "CMakeFiles/caos.dir/memory/MMU.cpp.o"
+  "CMakeFiles/caos.dir/memory/PagedMemoryManager.cpp.o"
+  "CMakeFiles/caos.dir/memory/PageFrame.cpp.o"
+  "CMakeFiles/caos.dir/memory/PagingTranslator.cpp.o"
+  "CMakeFiles/caos.dir/memory/ProcessPage.cpp.o"
+  "CMakeFiles/caos.dir/memory/ProcessSegment.cpp.o"
+  "CMakeFiles/caos.dir/memory/SegmentationFaultException.cpp.o"
+  "CMakeFiles/caos.dir/memory/SegmentTranslator.cpp.o"
+  "CMakeFiles/caos.dir/memory/TLB.cpp.o"
+  "CMakeFiles/caos.dir/PCB.cpp.o"
+  "CMakeFiles/caos.dir/PCBTest.cpp.o"
+  "CMakeFiles/caos.dir/Process.cpp.o"
+  "CMakeFiles/caos.dir/Processor.cpp.o"
+  "CMakeFiles/caos.dir/scheduler/RoundRobinScheduler.cpp.o"
+  "CMakeFiles/caos.dir/scheduler/SchedulerFactory.cpp.o"
+  "libcaos.pdb"
+  "libcaos.dylib"
+)
+
+# Per-language clean rules from dependency scanning.
+FOREACH(lang CXX)
+  INCLUDE(CMakeFiles/caos.dir/cmake_clean_${lang}.cmake OPTIONAL)
+ENDFOREACH(lang)
