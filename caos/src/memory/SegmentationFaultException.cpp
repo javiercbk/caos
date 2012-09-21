@@ -1,4 +1,4 @@
-#include "../../include/memory/SegmentationFaultException.h"
+#include "memory/SegmentationFaultException.h"
 
 namespace os{
 

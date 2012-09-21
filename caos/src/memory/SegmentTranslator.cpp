@@ -1,14 +1,21 @@
-/*
 #include "SegmentTranslator.h"
 
-pc::SegmentTranslator::SegmentTranslator()
-{
-    //ctor
+namespace pc {
+
+SegmentTranslator::SegmentTranslator(int bitsSegment, int bitsPage,
+		int bitsOffset) {
+	this->bitsSegment = bitsSegment;
+	this->bitsPage = bitsPage;
+	this->bitsOffset = bitsOffset;
 }
 
-pc::SegmentTranslator::~SegmentTranslator()
-{
-    //dtor
+SegmentTranslator::~SegmentTranslator() {
+	//dtor
 }
 
-*/
+os::ProcessSegment* SegmentTranslator::translateDecimalDirection(unsigned long long base, unsigned long long logicalDirection)
+		throw (InvalidAddressException) {
+	return NULL;
+}
+
+}

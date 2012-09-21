@@ -1,8 +1,7 @@
 #ifndef ProcessSegment_H
 #define ProcessSegment_H
 
-#include <vector>
-#include "../../include/memory/ProcessPage.h"
+#include "memory/ProcessPage.h"
 
 namespace os{
 
@@ -23,8 +22,6 @@ class ProcessSegment
     void setProcessSegmentPresent(bool isPresent);
     void setBase(unsigned long long base);
     void setLimit(unsigned long long limit);
-    std::vector<ProcessPage*>* getPages();
-
   protected:
   private:
     unsigned long long base; ///base del ProcessSegmento.
@@ -34,8 +31,7 @@ class ProcessSegment
     ProcessSegmentType* type; ///el tipo de ProcessSegmento.
     int dpl; ///descriptor privilege level.
     bool processSegmentPresent; ///flag que indica si el ProcessSegmento esta en memoria principal.
-    unsigned long long size; /// tama√±o del segmento
-    std::vector<ProcessPage*>* pages; /// paginas en las que esta dividido, NULO si no hay paginacion
+    unsigned long long size; /// tamaño del segmento
 };
 
 }

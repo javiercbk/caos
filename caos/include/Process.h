@@ -2,7 +2,7 @@
 #define PROCESS_H
 
 #include <vector>
-#include "../include/memory/ProcessPage.h"
+#include "memory/ProcessPage.h"
 
 namespace os {
 	class PCB;

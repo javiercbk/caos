@@ -1,5 +1,5 @@
-#include "../../include/Process.h"
-#include "../../include/scheduler/RoundRobinScheduler.h"
+#include "Process.h"
+#include "scheduler/RoundRobinScheduler.h"
 
 
 

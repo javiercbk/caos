@@ -1,7 +1,7 @@
 #ifndef FCFSIOSCHEDULER_H
 #define FCFSIOSCHEDULER_H
 
-#include "../../include/IO/IOScheduler.h"
+#include "IO/IOScheduler.h"
 #include <queue>
 
 namespace os{

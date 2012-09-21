@@ -2,9 +2,9 @@
 #define KERNEL_H
 
 #include <list>
-#include "../include/Dispatcher.h"
-#include "../include/scheduler/Scheduler.h"
-#include "../include/memory/KernelMemoryManager.h"
+#include "Dispatcher.h"
+#include "scheduler/Scheduler.h"
+#include "memory/KernelMemoryManager.h"
 
 namespace os {
 

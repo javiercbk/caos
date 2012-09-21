@@ -1,4 +1,4 @@
-#include "../../include/IO/Disk.h"
+#include "IO/Disk.h"
 
 #include <stdlib.h>
 

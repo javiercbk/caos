@@ -1,27 +1,28 @@
 #ifndef PAGINGTRANSLATOR_H
 #define PAGINGTRANSLATOR_H
 
-#include "../../include/memory/TranslationStrategy.h"
-#include "../../include/memory/ProcessPage.h"
-#include "../../include/PCB.h"
+#include "memory/TranslationStrategy.h"
+#include "memory/PageDescriptor.h"
+#include "memory/ProcessPage.h"
+#include "PCB.h"
 
 namespace pc{
 
-class PagingTranslator : public TranslationStrategy<os::ProcessPage*>
+class PagingTranslator : public TranslationStrategy<os::ProcessPage*, os::PageDescriptor>
 {
     public:
-        PagingTranslator(int bitsDirectory, int bitPage, int bitsOffset, int wordSize);
+        PagingTranslator(int bitsDirectory, int bitPage, int bitsOffset);
+        ~PagingTranslator();
         os::ProcessPage* translateDecimalDirection(unsigned long long base, unsigned long long logicalDirection) throw(InvalidAddressException);
         int getBitsDirectory();
         int getBitsPage();
         int getBitsOffset();
-        int getWordSize();
+        os::PageDescriptor getDescriptor();
     private:
         int bitsDirectory;
         int bitsPage;
         int bitsOffset;
-        int wordSize;
-        unsigned long long extractDecimalFromBits(unsigned long long number, int bitsToClear, int backbits);
+        os::PageDescriptor* descriptor;
 };
 
 }

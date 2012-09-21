@@ -1,4 +1,4 @@
-#include "../include/BUS.h"
+#include "BUS.h"
 
 namespace pc{
 

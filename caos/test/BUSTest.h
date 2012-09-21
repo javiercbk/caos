@@ -4,9 +4,9 @@
 #include "gtest/gtest.h"
 #include <vector>
 #include <algorithm>
-#include "../include/BUS.h"
-#include "../include/BusListener.h"
-#include "../include/BusWritter.h"
+#include "BUS.h"
+#include "BusListener.h"
+#include "BusWritter.h"
 
 class MockUpBusListener : public os::BusListener
 {

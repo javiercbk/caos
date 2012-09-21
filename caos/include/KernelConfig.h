@@ -1,9 +1,9 @@
 #ifndef KERNELCONFIG_H
 #define KERNELCONFIG_H
 
-#include "../include/Kernel.h"
-#include "../include/scheduler/Scheduler.h"
-#include "../include/scheduler/SchedulerFactory.h"
+#include "Kernel.h"
+#include "scheduler/Scheduler.h"
+#include "scheduler/SchedulerFactory.h"
 
 /**
 * Esta clase configura un Kernel segun las opciones

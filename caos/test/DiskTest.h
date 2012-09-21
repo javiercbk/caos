@@ -2,7 +2,7 @@
 #define DISKTEST_H
 
 #include "gtest/gtest.h"
-#include "../include/IO/Disk.h"
+#include "IO/Disk.h"
 
 #include <vector>
 

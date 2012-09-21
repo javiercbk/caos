@@ -1,5 +1,5 @@
 #include "BaseRegistryTranslatorTest.h"
-#include "../include/memory/BaseRegistryTranslator.h"
+#include "memory/BaseRegistryTranslator.h"
 
 void BaseRegistryTranslatorTest::SetUp() {
 	translatorStrategy = new pc::BaseRegistryTranslator();
@@ -11,6 +11,7 @@ void BaseRegistryTranslatorTest::TearDown() {
 
 
 TEST_F(BaseRegistryTranslatorTest, DefaultConstructor) {
-  long physicalDir = translatorStrategy->translateDecimalDirection(103,45);
-	EXPECT_EQ(103 + 45, physicalDir);
+	os::MemoryDirection* physicalDir = translatorStrategy->translateDecimalDirection(103,45);
+	EXPECT_EQ(103 + 45, physicalDir->getAddress());
+	delete physicalDir;
 }

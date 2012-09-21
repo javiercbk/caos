@@ -1,12 +1,15 @@
 #ifndef PAGEFRAME_H
 #define PAGEFRAME_H
 
+#include "memory/Address.h"
+#include "memory/PageDescriptor.h"
+
 namespace os{
 
-class ProcessPage
+class ProcessPage : public Address<PageDescriptor>
 {
   public:
-    ProcessPage();
+    ProcessPage(unsigned long long dir, unsigned long long page, unsigned long long offset);
     virtual ~ProcessPage();
     unsigned long long getDirectory();
     unsigned long long getPage();
@@ -25,6 +28,7 @@ class ProcessPage
     void setDirty(bool dirty);
     void setPageSize(unsigned long pageSize);
     unsigned long long getDecimalDir(unsigned int bitsDir, unsigned int bitsPag, unsigned int bitsOffset);
+    unsigned long long getDecimalDir(PageDescriptor wordDescriptor);
   protected:
     unsigned long long directory;///posicion de la tabla de paginas en la tabla de directorio de paginas
     unsigned long long page;///numero de la pagina

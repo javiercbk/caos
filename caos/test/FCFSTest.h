@@ -2,7 +2,7 @@
 #define FCFSTEST_H
 
 #include "gtest/gtest.h"
-#include "../include/IO/FCFSIOScheduler.h"
+#include "IO/FCFSIOScheduler.h"
 
 #include <queue>
 

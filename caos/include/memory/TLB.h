@@ -1,7 +1,7 @@
 #ifndef TLB_H
 #define TLB_H
 
-#include "../../include/Process.h"
+#include "Process.h"
 
 namespace pc{
 

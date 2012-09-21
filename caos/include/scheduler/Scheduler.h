@@ -2,7 +2,7 @@
 #define ABSTRACTSCHEDULER_H
 
 
-#include "../../include/Process.h"
+#include "Process.h"
 
 namespace os {
 

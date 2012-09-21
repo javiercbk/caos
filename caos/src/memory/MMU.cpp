@@ -1,34 +1,29 @@
-#include "../../include/memory/MMU.h"
-#include "../../include/memory/ProcessPage.h"
-#include "../../include/Processor.h"
-#include "../../include/memory/PagingTranslator.h"
+#include "memory/MMU.h"
+#include "memory/ProcessPage.h"
+#include "Processor.h"
+#include "memory/PagingTranslator.h"
+#include "memory/MemoryDirection.h"
 
 namespace pc{
 
-    template<class T>
-    MMU<T>::MMU(long manageSize, TranslationStrategy<T>* strategy, BUS* bus) : BusWritter(bus){
+    template<class T, class M>
+    MMU<T, M>::MMU(long manageSize, TranslationStrategy<T, M>* strategy, BUS* bus) : BusWritter(bus){
       memSize = manageSize;
       transStrategy = strategy;
       this->bus = bus;
     }
 
-    template<class T>
-    MMU<T>::~MMU(){
+    template<class T, class M>
+    MMU<T, M>::~MMU(){
       delete transStrategy;
     }
 
-    template<class T>
-    T MMU<T>::getAddress(long virtualAddress){
-        return NULL;
-    }
-
-    template<>
-    os::ProcessPage* MMU<os::ProcessPage*>::getAddress(long virtualAddress){
-      os::ProcessPage* physicalAddress = NULL;
-      PagingTranslator* ptrans = (PagingTranslator*) transStrategy;
+    template<class T, class M>
+    T MMU<T, M>::getAddress(long virtualAddress){
+      T physicalAddress = NULL;
       try{
-        physicalAddress = ptrans->translateDecimalDirection(NULL, virtualAddress);
-        if(physicalAddress->getDecimalDir(ptrans->getBitsDirectory(),ptrans->getBitsPage(), ptrans->getBitsOffset()) > memSize){
+        physicalAddress = transStrategy->translateDecimalDirection(NULL, virtualAddress);
+        if(physicalAddress->getDecimalDir(transStrategy->getDescriptor()) > memSize){
             throw new InvalidAddressException(virtualAddress);
         }
       }catch(InvalidAddressException& e){
@@ -38,18 +33,18 @@ namespace pc{
     }
 
     template
-    MMU<os::ProcessPage*>::MMU(long manageSize, TranslationStrategy<os::ProcessPage*>* strategy, BUS* bus);
+    MMU<os::ProcessPage*, os::PageDescriptor>::MMU(long manageSize, TranslationStrategy<os::ProcessPage*, os::PageDescriptor>* strategy, BUS* bus);
 
     template
-    MMU<long>::MMU(long manageSize, TranslationStrategy<long>* strategy, BUS* bus);
+    MMU<os::MemoryDirection*, int>::MMU(long manageSize, TranslationStrategy<os::MemoryDirection*, int>* strategy, BUS* bus);
 
     template
-    MMU<os::ProcessPage*>::~MMU();
+    MMU<os::ProcessPage*, os::PageDescriptor>::~MMU();
 
     template
-    MMU<long>::~MMU();
+    MMU<os::MemoryDirection*, int>::~MMU();
 
     template
-    long MMU<long>::getAddress(long virtualAddress);
+    os::ProcessPage* MMU<os::ProcessPage*, os::PageDescriptor>::getAddress(long virtualAddress);
 
 }

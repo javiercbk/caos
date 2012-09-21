@@ -4,7 +4,7 @@
 #include "KernelMemoryManager.h"
 #include "MMU.h"
 #include "ProcessPage.h"
-#include <list>
+#include "PageDescriptor.h"
 
 namespace os{
 
@@ -14,7 +14,7 @@ class PagedMemoryManager : public KernelMemoryManager
         PagedMemoryManager(unsigned long long memSize, int bitsDirectory, int bitPage, int bitsOffset, int wordSize);
         virtual ~PagedMemoryManager();
     private:
-        pc::MMU<os::ProcessPage*>* mmu;///Direct access to MMU
+        pc::MMU<os::ProcessPage*, os::PageDescriptor>* mmu;///Direct access to MMU
         unsigned long long tablesCount;
         unsigned long long pagesCount;
         unsigned long long directoriesCount;

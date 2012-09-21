@@ -1,7 +1,7 @@
 #ifndef ROUNDROBINSCHEDULER_H
 #define ROUNDROBINSCHEDULER_H
 
-#include "../../include/scheduler/Scheduler.h"
+#include "scheduler/Scheduler.h"
 #include <queue>
 
 namespace os {

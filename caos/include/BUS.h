@@ -1,7 +1,7 @@
 #ifndef BUS_H
 #define BUS_H
 
-#include "../include/BusListener.h"
+#include "BusListener.h"
 #include <vector>
 
 namespace pc{

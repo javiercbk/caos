@@ -8,7 +8,7 @@ namespace pc {
 	struct CPUReg;
 }
 
-#include "../include/Processor.h"
+#include "Processor.h"
 
 
 

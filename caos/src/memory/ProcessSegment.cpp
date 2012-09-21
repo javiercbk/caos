@@ -1,4 +1,4 @@
-#include "../../include/memory/ProcessSegment.h"
+#include "memory/ProcessSegment.h"
 
 namespace os{
 
@@ -9,10 +9,6 @@ ProcessSegment::ProcessSegment(ProcessSegmentType* type, unsigned long long base
 
 ProcessSegment::~ProcessSegment(){
   //dtor
-}
-
-std::vector<ProcessPage*>* ProcessSegment::getPages(){
-    return this->pages;
 }
 
 }

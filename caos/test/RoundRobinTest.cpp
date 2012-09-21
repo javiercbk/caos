@@ -27,7 +27,7 @@ os::Process* RoundRobinTest::makeRandomProcess() {
 
 TEST_F(RoundRobinTest, DefaultConstructor) {
 	os::Process* process = NULL;
-	for(int i; i < 10; i++) {
+	for(int i =0; i < 10; i++) {
 			process = makeRandomProcess();
 			kernel->getShortScheduler()->pushProcess(process);
 		}

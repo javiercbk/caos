@@ -1,9 +1,11 @@
-#include "../../include/memory/ProcessPage.h"
+#include "memory/ProcessPage.h"
 
 namespace os{
-ProcessPage::ProcessPage()
+ProcessPage::ProcessPage(unsigned long long dir, unsigned long long page, unsigned long long offset)
 {
-  //ctor
+  this->directory = dir;
+  this->page = page;
+  this->offset = offset;
 }
 
 ProcessPage::~ProcessPage()
@@ -65,6 +67,10 @@ unsigned long long ProcessPage::getDecimalDir(unsigned int bitsDir, unsigned int
     decimalDir += this->page << bitsPag;
     decimalDir += this->offset << bitsOffset;
     return decimalDir;
+}
+
+unsigned long long ProcessPage::getDecimalDir(PageDescriptor wordDescriptor){
+	return getDecimalDir(wordDescriptor.getBitsDirectory(), wordDescriptor.getBitsPage(), wordDescriptor.getBitsOffset());
 }
 
 }

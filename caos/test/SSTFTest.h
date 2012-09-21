@@ -2,7 +2,7 @@
 #define SSTFTEST_H
 
 #include "gtest/gtest.h"
-#include "../include/IO/SSTFScheduler.h"
+#include "IO/SSTFScheduler.h"
 
 #include <list>
 

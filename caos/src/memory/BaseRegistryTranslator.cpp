@@ -1,13 +1,17 @@
-#include "../../include/memory/BaseRegistryTranslator.h"
+#include "memory/BaseRegistryTranslator.h"
 
 namespace pc{
 
 BaseRegistryTranslator::BaseRegistryTranslator(){
 }
 
-unsigned long long BaseRegistryTranslator::translateDecimalDirection(unsigned long long base, unsigned long long logicalDirection) throw(InvalidAddressException)
+os::MemoryDirection* BaseRegistryTranslator::translateDecimalDirection(unsigned long long base, unsigned long long logicalDirection) throw(InvalidAddressException)
 {
-    return base + logicalDirection;
+    return new os::MemoryDirection(base + logicalDirection);
+}
+
+int BaseRegistryTranslator::getDescriptor(){
+	return NULL;
 }
 
 }

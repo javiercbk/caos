@@ -3,10 +3,10 @@
 
 void PagingMMUTest::SetUp(){
     bus = new pc::BUS();
-    pc::TranslationStrategy<os::ProcessPage*>* pagingTranslator = NULL;
+    pc::TranslationStrategy<os::ProcessPage*, os::PageDescriptor>* pagingTranslator = NULL;
     //1MB memory, 8388608 bits, 20 bits pointer, 2 directories, 1024 pages, 512 bytes page size
-    pagingTranslator = new pc::PagingTranslator(1, 10, 9, 20);
-    pagedMMU = new pc::MMU<os::ProcessPage*>(1048576, pagingTranslator, bus);
+    pagingTranslator = new pc::PagingTranslator(1, 10, 9);
+    pagedMMU = new pc::MMU<os::ProcessPage*, os::PageDescriptor>(1048576, pagingTranslator, bus);
 }
 
 void PagingMMUTest::TearDown(){

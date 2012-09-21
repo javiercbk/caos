@@ -1,6 +1,6 @@
 #include "FCFSTest.h"
 
-#include "../include/IO/FCFSIOScheduler.h"
+#include "IO/FCFSIOScheduler.h"
 #include <stdlib.h>
 #include <time.h>
 
@@ -22,7 +22,7 @@ int FCFSTest::makeRandomBlock(){
 
 TEST_F(FCFSTest, DefaultConstructor) {
 	int block = 0;
-	for(int i; i < 10; i++) {
+	for(int i = 0; i < 10; i++) {
 			block = makeRandomBlock();
 			ioScheduler->pushBlock(block);
 		}

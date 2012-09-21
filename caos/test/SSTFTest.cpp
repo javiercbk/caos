@@ -1,6 +1,6 @@
 #include "SSTFTest.h"
 
-#include "../include/IO/SSTFScheduler.h"
+#include "IO/SSTFScheduler.h"
 #include "TestHelper.h"
 
 void SSTFTest::SetUp() {

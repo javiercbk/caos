@@ -1,4 +1,4 @@
-#include "../../include/memory/PagedMemoryManager.h"
+#include "memory/PagedMemoryManager.h"
 
 namespace os{
 

@@ -1,11 +1,11 @@
 #include "PagingTranslatorTest.h"
-#include "../include/memory/PagingTranslator.h"
-#include "../include/memory/ProcessPage.h"
+#include "memory/PagingTranslator.h"
+#include "memory/ProcessPage.h"
 
 void PagingTranslatorTest::SetUp() {
   //dir: 16, Pag: 110, offset: 824
   // 10000 | 1101110 | 00000000001100111000
-	translatorStrategy = new pc::PagingTranslator(5,7,20,32);
+	translatorStrategy = new pc::PagingTranslator(5,7,20);
 }
 
 void PagingTranslatorTest::TearDown() {

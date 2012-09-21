@@ -1,4 +1,4 @@
-#include "../../include/memory/InvalidAddressException.h"
+#include "memory/InvalidAddressException.h"
 
 namespace pc{
 

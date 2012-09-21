@@ -1,7 +1,7 @@
 #ifndef SEGMENTATIONFAULTEXCEPTION_H
 #define SEGMENTATIONFAULTEXCEPTION_H
 
-#include "../../include/Process.h"
+#include "Process.h"
 
 namespace os{
 

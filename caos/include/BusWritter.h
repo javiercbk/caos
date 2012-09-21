@@ -1,7 +1,7 @@
 #ifndef BUSWRITTER_H
 #define BUSWRITTER_H
 
-#include "../include/BUS.h"
+#include "BUS.h"
 
 namespace pc{
 

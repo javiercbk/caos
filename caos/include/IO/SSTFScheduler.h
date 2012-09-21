@@ -2,7 +2,7 @@
 #define SSTFSCHEDULER_H
 
 #include <list>
-#include "../../include/IO/IOScheduler.h"
+#include "IO/IOScheduler.h"
 
 namespace os{
 

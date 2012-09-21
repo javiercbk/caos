@@ -1,8 +1,8 @@
 #ifndef SCHEDULERFACTORY_H
 #define SCHEDULERFACTORY_H
 
-#include "../../include/scheduler/Scheduler.h"
-#include "../../include/scheduler/RoundRobinScheduler.h"
+#include "scheduler/Scheduler.h"
+#include "scheduler/RoundRobinScheduler.h"
 
 namespace os {
 

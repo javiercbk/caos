@@ -1,4 +1,4 @@
-#include "../include/PCB.h"
+#include "PCB.h"
 
 namespace os {
 

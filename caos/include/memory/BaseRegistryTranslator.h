@@ -1,16 +1,18 @@
 #ifndef BASEREGISTRYTRANSLATION_H
 #define BASEREGISTRYTRANSLATION_H
 
-#include "../../include/memory/TranslationStrategy.h"
+#include "memory/TranslationStrategy.h"
+#include "memory/MemoryDirection.h"
 
 namespace pc {
 
-	class BaseRegistryTranslator : public TranslationStrategy<unsigned long long>
-	{
-		public:
-			BaseRegistryTranslator();
-			unsigned long long translateDecimalDirection(unsigned long long base, unsigned long long logicalDirection) throw(InvalidAddressException);
-	};
+class BaseRegistryTranslator : public TranslationStrategy<os::MemoryDirection*, int>
+{
+	public:
+		BaseRegistryTranslator();
+		os::MemoryDirection* translateDecimalDirection(unsigned long long base, unsigned long long logicalDirection) throw(InvalidAddressException);
+		int getDescriptor();
+};
 
 }
 #endif // BASEREGISTRYTRANSLATION_H

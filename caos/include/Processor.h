@@ -6,8 +6,8 @@ namespace os {
 }
 
 #include <string>
-#include "../include/Dispatcher.h"
-#include "../include/Process.h"
+#include "Dispatcher.h"
+#include "Process.h"
 
 
 namespace pc {

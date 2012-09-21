@@ -6,3 +6,5 @@ find . -name "cmake_install.cmake" | xargs rm -rfv
 find . -name "CMakeCache.txt" | xargs rm -rfv
 find . -name "CTestTestfile.cmake" | xargs rm -rfv
 rm -vrf Testing
+rm .project
+rm .cproject

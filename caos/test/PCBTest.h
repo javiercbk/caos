@@ -2,10 +2,10 @@
 #define PCBTEST_H
 
 #include "gtest/gtest.h"
-#include "../include/KernelConfig.h"
-#include "../include/Kernel.h"
-#include "../include/scheduler/SchedulerFactory.h"
-#include "../include/PCB.h"
+#include "KernelConfig.h"
+#include "Kernel.h"
+#include "scheduler/SchedulerFactory.h"
+#include "PCB.h"
 
 class PCBTest : public testing::Test {
 	protected:
