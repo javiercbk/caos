@@ -13,7 +13,7 @@ PagingTranslator::~PagingTranslator(){
 	delete descriptor;
 }
 
-os::ProcessPage* PagingTranslator::translateDecimalDirection(unsigned long long base, unsigned long long logicalDirection) throw(InvalidAddressException){
+os::ProcessPage* PagingTranslator::translateDirection(unsigned long long base, unsigned long long logicalDirection) throw(InvalidAddressException){
   int dir = logicalDirection >> (bitsPage + bitsOffset);
   int page = this->extractDecimalFromBits(logicalDirection, bitsPage, bitsOffset);
   int offset = this->extractDecimalFromBits(logicalDirection, bitsOffset, 0);

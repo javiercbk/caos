@@ -34,6 +34,7 @@ namespace os {
 	    @author Javier Lecuona
 	    @date Octubre 2011
 	    */
+	//template<class T>
 	class PCB
 	{
 		public:
@@ -54,6 +55,8 @@ namespace os {
 			unsigned long getLimit();
 			void setBase(unsigned long base);
 			void setLimit(unsigned long limit);
+			//void addMemory(T*);
+			//void freeMemory(T*);
 		protected:
 			Estado estado;
 			unsigned int pid;
@@ -64,6 +67,7 @@ namespace os {
 			unsigned long limit;
 			std::vector<pc::CPUReg*>* registros;
 			//TODO agregar los recursos utilizados
+			//std::vector<T*> usedMemory;
 		private:
 	};
 

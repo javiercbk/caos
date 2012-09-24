@@ -17,7 +17,7 @@ class TranslationStrategy
 {
   public:
 	virtual ~TranslationStrategy(){}
-    virtual T translateDecimalDirection(unsigned long long base, unsigned long long logicalDirection) throw(InvalidAddressException) = 0;
+    virtual T translateDirection(unsigned long long base, unsigned long long logicalDirection) throw(InvalidAddressException) = 0;
     virtual M getDescriptor() = 0;
   protected:
     unsigned long long extractDecimalFromBits(unsigned long long number, int bitsToClear, int backbits);

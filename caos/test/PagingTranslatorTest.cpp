@@ -14,13 +14,13 @@ void PagingTranslatorTest::TearDown() {
 
 
 TEST_F(PagingTranslatorTest, DefaultConstructor) {
-    os::ProcessPage* physicalDir = translatorStrategy->translateDecimalDirection(NULL,2262827832);
+    os::ProcessPage* physicalDir = translatorStrategy->translateDirection(NULL,2262827832);
     EXPECT_EQ(16, physicalDir->getDirectory());
 	EXPECT_EQ(110, physicalDir->getPage());
 	EXPECT_EQ(824, physicalDir->getOffset());
 	delete physicalDir;
 	//pruebo que no haya overflow al menos en 32 bits
-	physicalDir = translatorStrategy->translateDecimalDirection(NULL,4294967295);
+	physicalDir = translatorStrategy->translateDirection(NULL,4294967295);
     EXPECT_EQ(31, physicalDir->getDirectory());
 	EXPECT_EQ(127, physicalDir->getPage());
 	EXPECT_EQ(1048575, physicalDir->getOffset());

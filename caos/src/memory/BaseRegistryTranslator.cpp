@@ -5,7 +5,7 @@ namespace pc{
 BaseRegistryTranslator::BaseRegistryTranslator(){
 }
 
-os::MemoryDirection* BaseRegistryTranslator::translateDecimalDirection(unsigned long long base, unsigned long long logicalDirection) throw(InvalidAddressException)
+os::MemoryDirection* BaseRegistryTranslator::translateDirection(unsigned long long base, unsigned long long logicalDirection) throw(InvalidAddressException)
 {
     return new os::MemoryDirection(base + logicalDirection);
 }

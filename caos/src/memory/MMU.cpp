@@ -22,7 +22,7 @@ namespace pc{
     T MMU<T, M>::getAddress(long virtualAddress){
       T physicalAddress = NULL;
       try{
-        physicalAddress = transStrategy->translateDecimalDirection(NULL, virtualAddress);
+        physicalAddress = transStrategy->translateDirection(NULL, virtualAddress);
         if(physicalAddress->getDecimalDir(transStrategy->getDescriptor()) > memSize){
             throw new InvalidAddressException(virtualAddress);
         }

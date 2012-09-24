@@ -11,6 +11,7 @@ class ProcessSegment
 {
   public:
     ProcessSegment(ProcessSegmentType* type, unsigned long long base, unsigned long long size);
+    ProcessSegment(unsigned long long base, unsigned long long size);
     virtual ~ProcessSegment();
     unsigned long long getBase();
     int getGranularityFlag();
@@ -22,6 +23,7 @@ class ProcessSegment
     void setProcessSegmentPresent(bool isPresent);
     void setBase(unsigned long long base);
     void setLimit(unsigned long long limit);
+    void setType(ProcessSegmentType type);
   protected:
   private:
     unsigned long long base; ///base del ProcessSegmento.

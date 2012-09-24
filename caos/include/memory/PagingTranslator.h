@@ -13,7 +13,7 @@ class PagingTranslator : public TranslationStrategy<os::ProcessPage*, os::PageDe
     public:
         PagingTranslator(int bitsDirectory, int bitPage, int bitsOffset);
         ~PagingTranslator();
-        os::ProcessPage* translateDecimalDirection(unsigned long long base, unsigned long long logicalDirection) throw(InvalidAddressException);
+        os::ProcessPage* translateDirection(unsigned long long base, unsigned long long logicalDirection) throw(InvalidAddressException);
         int getBitsDirectory();
         int getBitsPage();
         int getBitsOffset();

@@ -10,7 +10,7 @@ class BaseRegistryTranslator : public TranslationStrategy<os::MemoryDirection*, 
 {
 	public:
 		BaseRegistryTranslator();
-		os::MemoryDirection* translateDecimalDirection(unsigned long long base, unsigned long long logicalDirection) throw(InvalidAddressException);
+		os::MemoryDirection* translateDirection(unsigned long long base, unsigned long long logicalDirection) throw(InvalidAddressException);
 		int getDescriptor();
 };
 

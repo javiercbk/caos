@@ -13,8 +13,12 @@ SegmentTranslator::~SegmentTranslator() {
 	//dtor
 }
 
-os::ProcessSegment* SegmentTranslator::translateDecimalDirection(unsigned long long base, unsigned long long logicalDirection)
+os::ProcessSegment* SegmentTranslator::translateDirection(unsigned long long base, unsigned long long logicalDirection)
 		throw (InvalidAddressException) {
+	return new os::ProcessSegment(base, logicalDirection);
+}
+
+long SegmentTranslator::getDescriptor(){
 	return NULL;
 }
 

@@ -6,10 +6,15 @@
 
 namespace os{
 
+/**
+ * Esta clase es la que provee la interfaz generica de bajo nivel del kernel
+ * para alocar un proceso, de-allocarlo y pedirle una direcci—n de
+ * memoria de un proceso.
+ * Esta clase se invoca a traves de System Calls
+ */
 class KernelMemoryManager
 {
     public:
-        KernelMemoryManager(unsigned long long memSize);
         virtual void allocateProcess(PCB* process) = 0;
         virtual void deallocateProcess(PCB* process) = 0;
         virtual void getAddress(const PCB* process, unsigned long long memoryAddress) = 0;
