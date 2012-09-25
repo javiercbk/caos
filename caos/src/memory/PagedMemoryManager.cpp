@@ -7,7 +7,7 @@ PagedMemoryManager::PagedMemoryManager(unsigned long long memSize, int bitsDirec
 	int totalPages = (2 ^ bitsDirectory) * (2 ^ bitsPage);
 	this->memSize = memSize;
 	this->wordSize = wordSize;
-    this->mmu = new pc::MMU<ProcessPage*, PageDescriptor>(memSize, new pc::PagingTranslator(bitsDirectory, bitPage, bitsOffset), bus);
+    this->mmu = new pc::MMU<ProcessPage*, PageDescriptor>(memSize, new pc::PagingTranslator(bitsDirectory, bitsPage, bitsOffset), bus);
     this->dirCount = 2 ^ bitsDirectory;
     this->pageCount = 2 ^ bitsPage;
     freeMemoryManager = new BitVectorFreePageManager(totalPages, dirCount, pageCount);

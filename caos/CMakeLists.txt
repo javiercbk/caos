@@ -17,3 +17,7 @@ set(COMMON_INCLUDES ${PROJECT_SOURCE_DIR}/include)
 add_subdirectory(src)
 
 add_subdirectory(test)
+
+find_package(Boost)
+
+set(Boost_USE_STATIC_LIBS ON)

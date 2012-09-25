@@ -5,7 +5,7 @@
 #include "memory/MMU.h"
 #include "memory/ProcessPage.h"
 #include "memory/PageDescriptor.h"
-#include "memory/PageDescriptor.h"
+#include "memory/PagingTranslator.h"
 #include "memory/BitVectorFreeMemoryManager.h"
 #include "BUS.h"
 #include <vector>

@@ -1,7 +1,9 @@
+find_package(Boost)
 include_directories(${COMMON_INCLUDES}
 	${COMMON_INCLUDES}/FileSystem
 	${COMMON_INCLUDES}/IO
-	${COMMON_INCLUDES}/memory)
+	${COMMON_INCLUDES}/memory
+	${Boost_INCLUDE_DIRS})
 
 FILE(GLOB_RECURSE ALL_SRC *.cpp)
 
