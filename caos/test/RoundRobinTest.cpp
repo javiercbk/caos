@@ -1,4 +1,4 @@
-#include "RoundRobinTest.h"
+#include "RoundRobinTest.hpp"
 
 #include <stdlib.h>
 #include <time.h>

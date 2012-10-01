@@ -1,4 +1,4 @@
-#include <memory/PagingTranslator.h>
+#include <memory/PagingTranslator.hpp>
 
 namespace pc{
 

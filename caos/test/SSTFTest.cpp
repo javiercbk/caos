@@ -1,7 +1,7 @@
-#include "SSTFTest.h"
+#include "SSTFTest.hpp"
 
-#include <IO/SSTFScheduler.h>
-#include "TestHelper.h"
+#include <IO/SSTFScheduler.hpp>
+#include "TestHelper.hpp"
 
 void SSTFTest::SetUp() {
     currentBlock = test::TestHelper::makeRandomBlock();

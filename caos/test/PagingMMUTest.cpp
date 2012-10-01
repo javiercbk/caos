@@ -1,5 +1,5 @@
-#include "PagingMMUTest.h"
-#include "TestHelper.h"
+#include "PagingMMUTest.hpp"
+#include "TestHelper.hpp"
 
 void PagingMMUTest::SetUp(){
     bus = new pc::BUS();

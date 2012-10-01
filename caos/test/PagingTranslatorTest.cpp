@@ -1,6 +1,6 @@
-#include "PagingTranslatorTest.h"
-#include <memory/PagingTranslator.h>
-#include <memory/ProcessPage.h>
+#include "PagingTranslatorTest.hpp"
+#include <memory/PagingTranslator.hpp>
+#include <memory/ProcessPage.hpp>
 
 void PagingTranslatorTest::SetUp() {
   //dir: 16, Pag: 110, offset: 824

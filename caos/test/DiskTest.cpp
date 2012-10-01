@@ -1,4 +1,4 @@
-#include "DiskTest.h"
+#include "DiskTest.hpp"
 
 #include <stdlib.h>
 

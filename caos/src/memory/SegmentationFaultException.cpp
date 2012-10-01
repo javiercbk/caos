@@ -1,4 +1,4 @@
-#include <memory/SegmentationFaultException.h>
+#include <memory/SegmentationFaultException.hpp>
 
 namespace os{
 

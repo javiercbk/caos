@@ -1,5 +1,5 @@
-#include "BaseRegistryTranslatorTest.h"
-#include <memory/BaseRegistryTranslator.h>
+#include "BaseRegistryTranslatorTest.hpp"
+#include <memory/BaseRegistryTranslator.hpp>
 
 void BaseRegistryTranslatorTest::SetUp() {
 	translatorStrategy = new pc::BaseRegistryTranslator();

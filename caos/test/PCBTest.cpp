@@ -1,4 +1,4 @@
-#include "PCBTest.h"
+#include "PCBTest.hpp"
 
 void PCBTest::SetUp() {
 	pcb = new os::PCB(24);

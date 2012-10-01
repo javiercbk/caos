@@ -1,4 +1,4 @@
-#include <KernelConfig.h>
+#include <KernelConfig.hpp>
 
 KernelConfig::KernelConfig()
 {

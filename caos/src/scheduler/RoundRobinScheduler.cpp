@@ -1,5 +1,5 @@
-#include <Process.h>
-#include <scheduler/RoundRobinScheduler.h>
+#include <Process.hpp>
+#include <scheduler/RoundRobinScheduler.hpp>
 
 
 

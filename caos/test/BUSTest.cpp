@@ -1,4 +1,4 @@
-#include "BUSTest.h"
+#include "BUSTest.hpp"
 
 void BUSTest::SetUp(){
   bus = new pc::BUS();

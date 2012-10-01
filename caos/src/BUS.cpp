@@ -1,4 +1,4 @@
-#include <BUS.h>
+#include <BUS.hpp>
 
 namespace pc{
 

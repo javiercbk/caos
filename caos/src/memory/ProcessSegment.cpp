@@ -1,4 +1,4 @@
-#include <memory/ProcessSegment.h>
+#include <memory/ProcessSegment.hpp>
 
 namespace os{
 

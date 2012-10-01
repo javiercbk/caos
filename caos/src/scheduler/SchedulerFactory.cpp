@@ -1,4 +1,4 @@
-#include <scheduler/SchedulerFactory.h>
+#include <scheduler/SchedulerFactory.hpp>
 
 namespace os {
 

@@ -1,6 +1,6 @@
-#include "FCFSTest.h"
+#include "FCFSTest.hpp"
 
-#include <IO/FCFSIOScheduler.h>
+#include <IO/FCFSIOScheduler.hpp>
 #include <stdlib.h>
 #include <time.h>
 

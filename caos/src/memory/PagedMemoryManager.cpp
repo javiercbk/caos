@@ -1,4 +1,4 @@
-#include <memory/PagedMemoryManager.h>
+#include <memory/PagedMemoryManager.hpp>
 
 namespace os{
 

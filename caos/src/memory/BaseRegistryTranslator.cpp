@@ -1,4 +1,4 @@
-#include <memory/BaseRegistryTranslator.h>
+#include <memory/BaseRegistryTranslator.hpp>
 
 namespace pc{
 

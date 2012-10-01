@@ -1,4 +1,4 @@
-#include <IO/SSTFScheduler.h>
+#include <IO/SSTFScheduler.hpp>
 #include <stdlib.h>
 
 namespace os{

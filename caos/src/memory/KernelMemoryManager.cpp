@@ -1,4 +1,4 @@
-#include <memory/KernelMemoryManager.h>
+#include <memory/KernelMemoryManager.hpp>
 
 namespace os{
 
