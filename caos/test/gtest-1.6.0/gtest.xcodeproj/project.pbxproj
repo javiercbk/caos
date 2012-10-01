@@ -1,0 +1,866 @@
+// !$*UTF8*$!
+{
+       archiveVersion = 1;
+       classes = {
+       };
+       objectVersion = 46;
+       objects = {
+
+/* Begin PBXAggregateTarget section */
+              4D4818B09D714E8095DE0672 /* ALL_BUILD */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = BDA89E38796B44B8B4122499 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+                     buildPhases = (
+                            A1CAA26029534487BC74DD8E /* CMake Rules */,
+                     );
+                     dependencies = (
+                            7F20F096294943199E22776C /* PBXTargetDependency */,
+                            8FC99DA049FE4BEDB89732C3 /* PBXTargetDependency */,
+                            699F7C136CA842F5B81EE798 /* PBXTargetDependency */,
+                     );
+                     name = ALL_BUILD;
+                     productName = ALL_BUILD;
+              };
+              E96145066C5148C4BB35B105 /* ZERO_CHECK */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = E6BC1B1A3F3C4E3484F8902B /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+                     buildPhases = (
+                            98D6A11D2DD4441CADEAAE90 /* CMake Rules */,
+                     );
+                     dependencies = (
+                     );
+                     name = ZERO_CHECK;
+                     productName = ZERO_CHECK;
+              };
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+A90E03EF2DF249C78E01D71E /* /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/src/gtest-all.cc */ = {isa = PBXBuildFile; fileRef = D1A3798E6371412BAC5C8702 /* /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/src/gtest-all.cc */; settings = { COMPILER_FLAGS = " -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra"; }; };
+78C18434305145ADB17D4992 /* /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 6827B88636E249658BED58D4 /* /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/CMakeLists.txt */; settings = { COMPILER_FLAGS = " -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra"; }; };
+BA8A1AB4FD4A4030BCE90075 /* /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/src/gtest_main.cc */ = {isa = PBXBuildFile; fileRef = F64E94EB75DD422DB0F29983 /* /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/src/gtest_main.cc */; settings = { COMPILER_FLAGS = " -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra"; }; };
+625958490AB24F109362CDEC /* /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 6827B88636E249658BED58D4 /* /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/CMakeLists.txt */; settings = { COMPILER_FLAGS = " -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+              3AE32C4A6193487A800A45EF /*  */ = {
+                     isa = PBXBuildStyle;
+              };
+              140B731247764397A353339A /* Debug */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Debug;
+              };
+              C1D18ECE0D3F4FE9B15A4F09 /* Release */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Release;
+              };
+              6B65DE89B44A459DA028A0A6 /* MinSizeRel */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = MinSizeRel;
+              };
+              14DB292A90AD433E9AD88F2A /* RelWithDebInfo */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = RelWithDebInfo;
+              };
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+              4D2E6368A28E494F8877C341 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 2C3607E9188B403EA40D6DF8 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = E96145066C5148C4BB35B105;
+                     remoteInfo = ZERO_CHECK;
+              };
+              1416F0B1EACC402FA6E90587 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 2C3607E9188B403EA40D6DF8 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 87FFE6A7C5074660A9F9BD43;
+                     remoteInfo = gtest_main;
+              };
+              1FC763C4FA9141D7912D62AB /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 2C3607E9188B403EA40D6DF8 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 273AA6D8563B4F5CB4760C49;
+                     remoteInfo = gtest;
+              };
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+6827B88636E249658BED58D4 /* /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.text"; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+D1A3798E6371412BAC5C8702 /* /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/src/gtest-all.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.cpp.cpp"; name = "gtest-all.cc"; path = "src/gtest-all.cc"; sourceTree = SOURCE_ROOT; };
+C7BC3FFB78454234A251B21F /* gtest */ = {isa = PBXFileReference; explicitFileType = "archive.ar"; path = "libgtest.a"; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+F64E94EB75DD422DB0F29983 /* /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/src/gtest_main.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.cpp.cpp"; name = "gtest_main.cc"; path = "src/gtest_main.cc"; sourceTree = SOURCE_ROOT; };
+8999F902073745E781E75C53 /* gtest_main */ = {isa = PBXFileReference; explicitFileType = "archive.ar"; path = "libgtest_main.a"; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+              2197E44A80A94194B9400634  = {
+                     isa = PBXGroup;
+                     children = (
+                            8CE0C0DBD3234CDEAA2E412F /* Sources */,
+                            11337CED95384296A5FA00F5 /* Resources */,
+                            29ECC4DB5CC943B7BA5562B6 /* Products */,
+                     );
+                     sourceTree = "<group>";
+              };
+              8CE0C0DBD3234CDEAA2E412F /* Sources */ = {
+                     isa = PBXGroup;
+                     children = (
+                            7D1FEEA98F0449ADAE4DD20C /* ALL_BUILD */,
+                            E62FFE0E791845449A086A4F /* ZERO_CHECK */,
+                            6A78DC70612E4C7E996273B3 /* gtest */,
+                            C89F946C3B8D410899C0FF54 /* gtest_main */,
+                     );
+                     name = Sources;
+                     sourceTree = "<group>";
+              };
+              11337CED95384296A5FA00F5 /* Resources */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = Resources;
+                     sourceTree = "<group>";
+              };
+              7D1FEEA98F0449ADAE4DD20C /* ALL_BUILD */ = {
+                     isa = PBXGroup;
+                     children = (
+                            7A5889D2418A43538C4A5291 /* CMake Rules */,
+                            6827B88636E249658BED58D4 /* /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/CMakeLists.txt */,
+                     );
+                     name = ALL_BUILD;
+                     sourceTree = "<group>";
+              };
+              7A5889D2418A43538C4A5291 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              E62FFE0E791845449A086A4F /* ZERO_CHECK */ = {
+                     isa = PBXGroup;
+                     children = (
+                            39E63231E76F4C02889321FC /* CMake Rules */,
+                            6827B88636E249658BED58D4 /* /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/CMakeLists.txt */,
+                     );
+                     name = ZERO_CHECK;
+                     sourceTree = "<group>";
+              };
+              39E63231E76F4C02889321FC /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              6A78DC70612E4C7E996273B3 /* gtest */ = {
+                     isa = PBXGroup;
+                     children = (
+                            E083B4D054944428B7FF6232 /* Source Files */,
+                            6827B88636E249658BED58D4 /* /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/CMakeLists.txt */,
+                     );
+                     name = gtest;
+                     sourceTree = "<group>";
+              };
+              E083B4D054944428B7FF6232 /* Source Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            D1A3798E6371412BAC5C8702 /* /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/src/gtest-all.cc */,
+                     );
+                     name = "Source Files";
+                     sourceTree = "<group>";
+              };
+              C89F946C3B8D410899C0FF54 /* gtest_main */ = {
+                     isa = PBXGroup;
+                     children = (
+                            878F540C1C354D2B90754318 /* Source Files */,
+                            6827B88636E249658BED58D4 /* /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/CMakeLists.txt */,
+                     );
+                     name = gtest_main;
+                     sourceTree = "<group>";
+              };
+              878F540C1C354D2B90754318 /* Source Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            F64E94EB75DD422DB0F29983 /* /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/src/gtest_main.cc */,
+                     );
+                     name = "Source Files";
+                     sourceTree = "<group>";
+              };
+              29ECC4DB5CC943B7BA5562B6 /* Products */ = {
+                     isa = PBXGroup;
+                     children = (
+                            C7BC3FFB78454234A251B21F /* gtest */,
+                            8999F902073745E781E75C53 /* gtest_main */,
+                     );
+                     name = Products;
+                     sourceTree = "<group>";
+              };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+              273AA6D8563B4F5CB4760C49 /* gtest */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = E7FC3C070A3C4A8A909009BB /* Build configuration list for PBXNativeTarget "gtest" */;
+                     buildPhases = (
+                            9DA86AF6883A4E25A8F6DE8B /* Sources */,
+                            A7BC81C601A840EAAF2BE024 /* CMake PostBuild Rules */,
+                     );
+                     buildRules = (
+                     );
+                     dependencies = (
+                            7F20F096294943199E22776C /* PBXTargetDependency */,
+                     );
+                     name = gtest;
+                     productName = gtest;
+                     productReference = C7BC3FFB78454234A251B21F /* gtest */;
+                     productType = "com.apple.product-type.library.static";
+              };
+              87FFE6A7C5074660A9F9BD43 /* gtest_main */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = CB1AE335343A4110B499B672 /* Build configuration list for PBXNativeTarget "gtest_main" */;
+                     buildPhases = (
+                            0A9EAD532D644FC59E509763 /* Sources */,
+                            A3BE0DD100514FEB826D642E /* CMake PostBuild Rules */,
+                     );
+                     buildRules = (
+                     );
+                     dependencies = (
+                            7F20F096294943199E22776C /* PBXTargetDependency */,
+                            699F7C136CA842F5B81EE798 /* PBXTargetDependency */,
+                     );
+                     name = gtest_main;
+                     productName = gtest_main;
+                     productReference = 8999F902073745E781E75C53 /* gtest_main */;
+                     productType = "com.apple.product-type.library.static";
+              };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+              2C3607E9188B403EA40D6DF8 /* Project object */ = {
+                     isa = PBXProject;
+                     attributes = {
+                            BuildIndependentTargetsInParallel = YES;
+                     };
+                     buildConfigurationList = DC7A2FB8C1854642AD205853 /* Build configuration list for PBXProject  "gtest" */;
+                     buildSettings = {
+                     };
+                     buildStyles = (
+                            140B731247764397A353339A /* Debug */,
+                            C1D18ECE0D3F4FE9B15A4F09 /* Release */,
+                            6B65DE89B44A459DA028A0A6 /* MinSizeRel */,
+                            14DB292A90AD433E9AD88F2A /* RelWithDebInfo */,
+                     );
+                     compatibilityVersion = "Xcode 3.2";
+                     hasScannedForEncodings = 0;
+                     mainGroup = 2197E44A80A94194B9400634;
+                     projectDirPath = ".";
+                     projectRoot = "";
+                     targets = (
+                            4D4818B09D714E8095DE0672 /* ALL_BUILD */,
+                            E96145066C5148C4BB35B105 /* ZERO_CHECK */,
+                            273AA6D8563B4F5CB4760C49 /* gtest */,
+                            87FFE6A7C5074660A9F9BD43 /* gtest_main */,
+                     );
+              };
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+              87EC723272614705A7BADDBB /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              A1CAA26029534487BC74DD8E /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0 -f /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              768A1E59738F4177AEF2F782 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              98D6A11D2DD4441CADEAAE90 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0 -f /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              A7BC81C601A840EAAF2BE024 /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0 -f /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/CMakeScripts/gtest_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              A3BE0DD100514FEB826D642E /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0 -f /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/CMakeScripts/gtest_main_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+              9DA86AF6883A4E25A8F6DE8B /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            A90E03EF2DF249C78E01D71E /* /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/src/gtest-all.cc */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+              0A9EAD532D644FC59E509763 /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            BA8A1AB4FD4A4030BCE90075 /* /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/src/gtest_main.cc */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+              7F20F096294943199E22776C /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = E96145066C5148C4BB35B105 /* ZERO_CHECK */;
+                     targetProxy = 4D2E6368A28E494F8877C341 /* PBXContainerItemProxy */;
+              };
+              8FC99DA049FE4BEDB89732C3 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 87FFE6A7C5074660A9F9BD43 /* gtest_main */;
+                     targetProxy = 1416F0B1EACC402FA6E90587 /* PBXContainerItemProxy */;
+              };
+              699F7C136CA842F5B81EE798 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 273AA6D8563B4F5CB4760C49 /* gtest */;
+                     targetProxy = 1FC763C4FA9141D7912D62AB /* PBXContainerItemProxy */;
+              };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+              B8564EB906934225BBDFAA36 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+                            ONLY_ACTIVE_ARCH = YES;
+                            SDKROOT = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk";
+                            SYMROOT = "/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/build";
+                     };
+                     name = Debug;
+              };
+              0C03993CEC1548F4AB73F52D /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+                            ONLY_ACTIVE_ARCH = YES;
+                            SDKROOT = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk";
+                            SYMROOT = "/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/build";
+                     };
+                     name = Release;
+              };
+              D6EF58ED287A43FEAA6A19C1 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+                            ONLY_ACTIVE_ARCH = YES;
+                            SDKROOT = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk";
+                            SYMROOT = "/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/build";
+                     };
+                     name = MinSizeRel;
+              };
+              625D8F2037F54E439A3EE0E1 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+                            ONLY_ACTIVE_ARCH = YES;
+                            SDKROOT = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk";
+                            SYMROOT = "/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/build";
+                     };
+                     name = RelWithDebInfo;
+              };
+              6C8953E8FB5845498BC0DCDA /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/include", "/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0", );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "   -Wall";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              8419D76C5B4A4D52B9787166 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/include", "/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0", );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "   -Wall";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              B366322FF89840B1B9BF3CAA /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/include", "/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0", );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "   -Wall";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = MinSizeRel;
+              };
+              78FFA786ACD742298C17DC21 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/include", "/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0", );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "   -Wall";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = RelWithDebInfo;
+              };
+              D2AF28D5B41A409F86FBDDFD /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/include", "/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0", );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "   -Wall";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              CB40BE41E9264D36AC3A4E62 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/include", "/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0", );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "   -Wall";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              D4CE95E9245042C086FBB19A /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/include", "/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0", );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "   -Wall";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = MinSizeRel;
+              };
+              98A6C219B6FF49B4AC8E5C06 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/include", "/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0", );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "   -Wall";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = RelWithDebInfo;
+              };
+              BFC2FF4B891E45E2B68929A2 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/include", "/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0", );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "     -Wall";
+                            OTHER_CPLUSPLUSFLAGS = "     -Wall";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = gtest;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              FDDCADB3C18141EE92EC2242 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/include", "/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0", );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "    -DNDEBUG   -Wall";
+                            OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG   -Wall";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = gtest;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              AC1E86FC346E41DE8B199EEB /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = s;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/include", "/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0", );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "    -DNDEBUG   -Wall";
+                            OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG   -Wall";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = gtest;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = MinSizeRel;
+              };
+              5E1358675D2146D592DAFEF9 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 2;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/include", "/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0", );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "         -Wall";
+                            OTHER_CPLUSPLUSFLAGS = "         -Wall";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = gtest;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = RelWithDebInfo;
+              };
+              F97C1F3E874D4E53B18E53C9 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/include", "/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0", );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "     -Wall";
+                            OTHER_CPLUSPLUSFLAGS = "     -Wall";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = gtest_main;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              73189A3162C3435AB47B34AA /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/include", "/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0", );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "    -DNDEBUG   -Wall";
+                            OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG   -Wall";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = gtest_main;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              27C77B97E1FC4BDD904334A6 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = s;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/include", "/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0", );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "    -DNDEBUG   -Wall";
+                            OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG   -Wall";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = gtest_main;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = MinSizeRel;
+              };
+              1CF997C917F84D69B7B9B3D5 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 2;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/include", "/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0", );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "         -Wall";
+                            OTHER_CPLUSPLUSFLAGS = "         -Wall";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = gtest_main;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = RelWithDebInfo;
+              };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+              DC7A2FB8C1854642AD205853 /* Build configuration list for PBXProject  "gtest" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            B8564EB906934225BBDFAA36 /* Debug */,
+                            0C03993CEC1548F4AB73F52D /* Release */,
+                            D6EF58ED287A43FEAA6A19C1 /* MinSizeRel */,
+                            625D8F2037F54E439A3EE0E1 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              BDA89E38796B44B8B4122499 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            6C8953E8FB5845498BC0DCDA /* Debug */,
+                            8419D76C5B4A4D52B9787166 /* Release */,
+                            B366322FF89840B1B9BF3CAA /* MinSizeRel */,
+                            78FFA786ACD742298C17DC21 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              E6BC1B1A3F3C4E3484F8902B /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            D2AF28D5B41A409F86FBDDFD /* Debug */,
+                            CB40BE41E9264D36AC3A4E62 /* Release */,
+                            D4CE95E9245042C086FBB19A /* MinSizeRel */,
+                            98A6C219B6FF49B4AC8E5C06 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              E7FC3C070A3C4A8A909009BB /* Build configuration list for PBXNativeTarget "gtest" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            BFC2FF4B891E45E2B68929A2 /* Debug */,
+                            FDDCADB3C18141EE92EC2242 /* Release */,
+                            AC1E86FC346E41DE8B199EEB /* MinSizeRel */,
+                            5E1358675D2146D592DAFEF9 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              CB1AE335343A4110B499B672 /* Build configuration list for PBXNativeTarget "gtest_main" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            F97C1F3E874D4E53B18E53C9 /* Debug */,
+                            73189A3162C3435AB47B34AA /* Release */,
+                            27C77B97E1FC4BDD904334A6 /* MinSizeRel */,
+                            1CF997C917F84D69B7B9B3D5 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+/* End XCConfigurationList section */
+       };
+       rootObject = 2C3607E9188B403EA40D6DF8;
+}

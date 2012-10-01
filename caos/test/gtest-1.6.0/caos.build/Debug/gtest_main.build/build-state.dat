@@ -1,0 +1,90 @@
+Tgtest_main
+v5
+r1
+cCheck dependencies
+cCompileC test/gtest-1.6.0/caos.build/Debug/gtest_main.build/Objects-normal/x86_64/gtest_main.o /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/src/gtest_main.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLibtool /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/Debug/libgtest_main.a normal x86_64
+cPhaseScriptExecution "CMake PostBuild Rules" /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/caos.build/Debug/gtest_main.build/Script-8BAE9EBAB70942878F9B79B2.sh
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk
+c00000000505B83A800000000000000CC
+t1348174760
+s204
+
+N/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/Debug/libgtest_main.a
+t2
+s0
+
+N/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/caos.build/Debug/gtest_main.build/Objects-normal/x86_64/gtest_main.LinkFileList
+c00000000505BE61C0000000000000085
+t1348199964
+s133
+
+N/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/caos.build/Debug/gtest_main.build/Objects-normal/x86_64/gtest_main.o
+t2
+s0
+
+N/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/caos.build/Debug/gtest_main.build/Script-8BAE9EBAB70942878F9B79B2.sh
+c00000000505BE61C00000000000000D3
+t1348199964
+s211
+
+N/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/include/gtest/gtest.h
+c000000004DA868F60000000000014212
+t1302882550
+s82450
+
+N/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/src/gtest_main.cc
+c000000004DA868F800000000000006EC
+t1302882552
+s1772
+i<iostream>
+i"gtest/gtest.h"
+
+CBuild AST from /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/src/gtest_main.cc
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesa81b049c1d0cb641^38bc049c1d0cb641^---0#1#0#--18"Check dependencies36"2847FB4C-0122-4197-A9EE-CF838DFF8D9F-
+
+CCompileC test/gtest-1.6.0/caos.build/Debug/gtest_main.build/Objects-normal/x86_64/gtest_main.o /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/src/gtest_main.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s369892764.020253
+e369892765.094320
+r1
+xCompileC
+xtest/gtest-1.6.0/caos.build/Debug/gtest_main.build/Objects-normal/x86_64/gtest_main.o
+x/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/src/gtest_main.cc
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compile /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/src/gtest_main.cc5857059c1d0cb641^0725189d1d0cb641^---0#0#0#-19%DVTDocumentLocation2@97"file://localhost/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/src/gtest_main.cc0000000000000000^2343"CompileC test/gtest-1.6.0/caos.build/Debug/gtest_main.build/Objects-normal/x86_64/gtest_main.o test/gtest-1.6.0/src/gtest_main.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/javier/Documents/workspacecpp/caos/caos    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions "-DCMAKE_INTDIR=\"Debug\"" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -Wno-sign-conversion -I/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/Debug/include -I/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/include -I/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0 -I/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/caos.build/Debug/gtest_main.build/DerivedSources/x86_64 -I/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/caos.build/Debug/gtest_main.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/Debug -Wall -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -MMD -MT dependencies -MF /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/caos.build/Debug/gtest_main.build/Objects-normal/x86_64/gtest_main.d --serialize-diagnostics /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/caos.build/Debug/gtest_main.build/Objects-normal/x86_64/gtest_main.dia -c /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/src/gtest_main.cc -o /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/caos.build/Debug/gtest_main.build/Objects-normal/x86_64/gtest_main.o36"D5081D74-59A2-47B4-A89B-549F6199C71E-
+
+CLibtool /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/Debug/libgtest_main.a normal x86_64
+s369892765.101180
+e369892765.107775
+r1
+xLibtool
+x/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/Debug/libgtest_main.a
+xnormal
+xx86_64
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Libtool test/gtest-1.6.0/Debug/libgtest_main.a normal x86_6448f9199d1d0cb641^68971b9d1d0cb641^---0#0#0#--707"Libtool test/gtest-1.6.0/Debug/libgtest_main.a normal x86_64    cd /Users/javier/Documents/workspacecpp/caos/caos    setenv MACOSX_DEPLOYMENT_TARGET 10.7    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only x86_64 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -L/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/Debug -filelist /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/caos.build/Debug/gtest_main.build/Objects-normal/x86_64/gtest_main.LinkFileList -o /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/Debug/libgtest_main.a36"C096FBA0-80DD-4EF2-B95F-3CA23F59CB45-
+
+CPhaseScriptExecution "CMake PostBuild Rules" /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/caos.build/Debug/gtest_main.build/Script-8BAE9EBAB70942878F9B79B2.sh
+s369892765.115774
+e369892765.152740
+r1
+xPhaseScriptExecution
+xCMake PostBuild Rules
+x/Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/caos.build/Debug/gtest_main.build/Script-8BAE9EBAB70942878F9B79B2.sh
+oecho "Depend check for xcode"
+oDepend check for xcode
+ocd /Users/javier/Documents/workspacecpp/caos/caos && make -C /Users/javier/Documents/workspacecpp/caos/caos -f /Users/javier/Documents/workspacecpp/caos/caos/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.gtest_main.Debug
+o/bin/rm -f /Users/javier/Documents/workspacecpp/caos/caos/test/Debug/caos-test
+oecho "Depend check for xcode"
+oDepend check for xcode
+ocd /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0 && make -C /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0 -f /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.gtest_main.Debug
+omake[1]: Nothing to be done for `PostBuild.gtest_main.Debug'.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection47"Run custom shell script 'CMake PostBuild Rules'6c231e9d1d0cb641^a01a279d1d0cb641^-744"echo "Depend check for xcode"Depend check for xcodecd /Users/javier/Documents/workspacecpp/caos/caos && make -C /Users/javier/Documents/workspacecpp/caos/caos -f /Users/javier/Documents/workspacecpp/caos/caos/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.gtest_main.Debug/bin/rm -f /Users/javier/Documents/workspacecpp/caos/caos/test/Debug/caos-testecho "Depend check for xcode"Depend check for xcodecd /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0 && make -C /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0 -f /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.gtest_main.Debugmake[1]: Nothing to be done for `PostBuild.gtest_main.Debug'.8(21%IDEActivityLogMessage2@30"echo "Depend check for xcode"-369892765#0#30#-0#-----2@23"Depend check for xcode-369892765#30#23#-0#-----2@223"cd /Users/javier/Documents/workspacecpp/caos/caos && make -C /Users/javier/Documents/workspacecpp/caos/caos -f /Users/javier/Documents/workspacecpp/caos/caos/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.gtest_main.Debug-369892765#53#223#-0#-----2@79"/bin/rm -f /Users/javier/Documents/workspacecpp/caos/caos/test/Debug/caos-test-369892765#276#79#-0#-----2@30"echo "Depend check for xcode"-369892765#355#30#-0#-----2@23"Depend check for xcode-369892765#385#23#-0#-----2@274"cd /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0 && make -C /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0 -f /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.gtest_main.Debug-369892765#408#274#-0#-----2@62"make[1]: Nothing to be done for `PostBuild.gtest_main.Debug'.-369892765#682#62#-0#-----0#0#0#--333"PhaseScriptExecution "CMake PostBuild Rules" test/gtest-1.6.0/caos.build/Debug/gtest_main.build/Script-8BAE9EBAB70942878F9B79B2.sh    cd /Users/javier/Documents/workspacecpp/caos/caos    /bin/sh -c /Users/javier/Documents/workspacecpp/caos/caos/test/gtest-1.6.0/caos.build/Debug/gtest_main.build/Script-8BAE9EBAB70942878F9B79B2.sh36"1CC4624D-A230-44D6-A3C6-06DBE4B16B41-
+
