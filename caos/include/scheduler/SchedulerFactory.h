@@ -1,8 +1,7 @@
-#ifndef SCHEDULERFACTORY_H
-#define SCHEDULERFACTORY_H
+#pragma once
 
-#include "scheduler/Scheduler.h"
-#include "scheduler/RoundRobinScheduler.h"
+#include <scheduler/Scheduler.h>
+#include <scheduler/RoundRobinScheduler.h>
 
 namespace os {
 
@@ -15,4 +14,3 @@ namespace os {
 	};
 
 }
-#endif // SCHEDULERFACTORY_H

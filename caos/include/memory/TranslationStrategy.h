@@ -1,8 +1,7 @@
-#ifndef TRANSLATIONSTRATEGY_H
-#define TRANSLATIONSTRATEGY_H
+#pragma once
 
-#include "memory/InvalidAddressException.h"
-#include "PCB.h"
+#include <memory/InvalidAddressException.h>
+#include <PCB.h>
 
 namespace pc{
 
@@ -24,4 +23,3 @@ class TranslationStrategy
 };
 
 }
-#endif // TRANSLATIONSTRATEGY_H

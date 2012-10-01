@@ -1,13 +1,12 @@
-#ifndef PAGEDMEMORYMANAGER_H
-#define PAGEDMEMORYMANAGER_H
+#pragma once
 
-#include "memory/KernelMemoryManager.h"
-#include "memory/MMU.h"
-#include "memory/ProcessPage.h"
-#include "memory/PageDescriptor.h"
-#include "memory/PagingTranslator.h"
-#include "memory/BitVectorFreeMemoryManager.h"
-#include "BUS.h"
+#include <memory/KernelMemoryManager.h>
+#include <memory/MMU.h>
+#include <memory/ProcessPage.h>
+#include <memory/PageDescriptor.h>
+#include <memory/PagingTranslator.h>
+#include <memory/BitVectorFreeMemoryManager.h>
+#include <BUS.h>
 #include <vector>
 
 namespace os{
@@ -24,6 +23,7 @@ class PagedMemoryManager : public KernelMemoryManager
         ~PagedMemoryManager();
         void allocateProcess(PCB* process);
 		void deallocateProcess(PCB* process);
+		void allocateBytesProcess(PCB* process, unsigned long long bytes);
 		void getAddress(const PCB* process, unsigned long long memoryAddress);
     private:
 		unsigned long long dirCount; ///este campo es para uso interno y no existe en un SO.
@@ -36,4 +36,3 @@ class PagedMemoryManager : public KernelMemoryManager
 };
 
 }
-#endif // PAGEDMEMORYMANAGER_H

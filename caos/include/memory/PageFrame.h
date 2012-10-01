@@ -1,5 +1,4 @@
-#ifndef PAGEFRAME_H
-#define PAGEFRAME_H
+#pragma once
 
 namespace os{
 
@@ -39,4 +38,3 @@ class PageFrame
 };
 
 }
-#endif // PAGEFRAME_H

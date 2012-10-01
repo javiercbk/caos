@@ -1,8 +1,7 @@
-#ifndef FCFSTEST_H
-#define FCFSTEST_H
+#pragma once
 
 #include "gtest/gtest.h"
-#include "IO/FCFSIOScheduler.h"
+#include <IO/FCFSIOScheduler.h>
 
 #include <queue>
 
@@ -15,5 +14,3 @@ protected:
     std::queue<int>* blockQueue;
     int makeRandomBlock();
 };
-
-#endif // FCFSTEST_H

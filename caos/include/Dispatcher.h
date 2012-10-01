@@ -1,5 +1,4 @@
-#ifndef DISPATCHER_H
-#define DISPATCHER_H
+#pragma once
 
 namespace os {
 
@@ -21,4 +20,3 @@ class Dispatcher{
 };
 
 }
-#endif // DISPATCHER_H

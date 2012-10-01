@@ -1,7 +1,6 @@
-#ifndef FCFSIOSCHEDULER_H
-#define FCFSIOSCHEDULER_H
+#pragma once
 
-#include "IO/IOScheduler.h"
+#include <IO/IOScheduler.h>
 #include <queue>
 
 namespace os{
@@ -19,4 +18,3 @@ class FCFSIOScheduler : public IOScheduler
 };
 
 }
-#endif // FCFSIOSCHEDULER_H

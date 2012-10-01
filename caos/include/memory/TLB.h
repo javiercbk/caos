@@ -1,7 +1,6 @@
-#ifndef TLB_H
-#define TLB_H
+#pragma once
 
-#include "Process.h"
+#include <Process.h>
 
 namespace pc{
 
@@ -30,4 +29,3 @@ class TLB
 };
 
 }
-#endif // TLB_H

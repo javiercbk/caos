@@ -1,12 +1,11 @@
-#ifndef MMUTEST_H
-#define MMUTEST_H
+#pragma once
 
 #include "gtest/gtest.h"
-#include "memory/MMU.h"
-#include "BUS.h"
-#include "memory/PagingTranslator.h"
-#include "memory/ProcessPage.h"
-#include "memory/PageDescriptor.h"
+#include <memory/MMU.h>
+#include <BUS.h>
+#include <memory/PagingTranslator.h>
+#include <memory/ProcessPage.h>
+#include <memory/PageDescriptor.h>
 
 class PagingMMUTest : public testing::Test
 {
@@ -17,5 +16,3 @@ class PagingMMUTest : public testing::Test
         pc::BUS* bus;
         os::ProcessPage* ppage;
 };
-
-#endif // MMUTEST_H

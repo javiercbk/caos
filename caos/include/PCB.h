@@ -1,5 +1,4 @@
-#ifndef PCB_H
-#define PCB_H
+#pragma once
 
 #include <vector>
 #include <string>
@@ -8,7 +7,7 @@ namespace pc {
 	struct CPUReg;
 }
 
-#include "Processor.h"
+#include <Processor.h>
 
 
 
@@ -72,5 +71,3 @@ namespace os {
 	};
 
 }
-
-#endif // PCB_H

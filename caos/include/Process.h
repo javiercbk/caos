@@ -1,8 +1,7 @@
-#ifndef PROCESS_H
-#define PROCESS_H
+#pragma once
 
 #include <vector>
-#include "memory/ProcessPage.h"
+#include <memory/ProcessPage.h>
 
 namespace os {
 	class PCB;
@@ -39,4 +38,3 @@ namespace os {
 	};
 
 }
-#endif // PROCESS_H

@@ -1,12 +1,11 @@
-#ifndef BUSTEST_H
-#define BUSTEST_H
+#pragma once
 
 #include "gtest/gtest.h"
 #include <vector>
 #include <algorithm>
-#include "BUS.h"
-#include "BusListener.h"
-#include "BusWritter.h"
+#include <BUS.h>
+#include <BusListener.h>
+#include <BusWritter.h>
 
 class MockUpBusListener : public os::BusListener
 {
@@ -45,5 +44,3 @@ class BUSTest : public testing::Test
     void createListeners();
     void createWritters();
 };
-
-#endif // BUSTEST_H

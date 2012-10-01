@@ -1,10 +1,9 @@
-#ifndef KERNEL_H
-#define KERNEL_H
+#pragma once
 
 #include <list>
-#include "Dispatcher.h"
-#include "scheduler/Scheduler.h"
-#include "memory/KernelMemoryManager.h"
+#include <Dispatcher.h>
+#include <scheduler/Scheduler.h>
+#include <memory/KernelMemoryManager.h>
 
 namespace os {
 
@@ -41,5 +40,3 @@ namespace os {
 	};
 
 }
-
-#endif // KERNEL_H

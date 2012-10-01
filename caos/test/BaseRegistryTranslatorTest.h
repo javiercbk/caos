@@ -1,11 +1,10 @@
-#ifndef BASEREGISTRYTRANSLATORTEST_H
-#define BASEREGISTRYTRANSLATORTEST_H
+#pragma once
 
 #include "gtest/gtest.h"
 
-#include "memory/TranslationStrategy.h"
-#include "memory/MemoryDirection.h"
-#include "PCB.h"
+#include <memory/TranslationStrategy.h>
+#include <memory/MemoryDirection.h>
+#include <PCB.h>
 
 class BaseRegistryTranslatorTest : public testing::Test
 {
@@ -15,5 +14,3 @@ class BaseRegistryTranslatorTest : public testing::Test
     pc::TranslationStrategy<os::MemoryDirection*, int>* translatorStrategy;
     os::PCB* pcb;
 };
-
-#endif // BASEREGISTRYTRANSLATORTEST_H

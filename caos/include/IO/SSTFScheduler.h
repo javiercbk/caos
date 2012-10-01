@@ -1,8 +1,7 @@
-#ifndef SSTFSCHEDULER_H
-#define SSTFSCHEDULER_H
+#pragma once
 
 #include <list>
-#include "IO/IOScheduler.h"
+#include <IO/IOScheduler.h>
 
 namespace os{
 
@@ -18,4 +17,3 @@ class SSTFScheduler : public IOScheduler
 };
 
 }
-#endif // SSTFSCHEDULER_H

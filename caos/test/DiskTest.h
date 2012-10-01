@@ -1,8 +1,7 @@
-#ifndef DISKTEST_H
-#define DISKTEST_H
+#pragma once
 
 #include "gtest/gtest.h"
-#include "IO/Disk.h"
+#include <IO/Disk.h>
 
 #include <vector>
 
@@ -20,5 +19,3 @@ class DiskTest : public testing::Test
         void generateExpectedAddress(long cylinder, long head, long sector);
         bool isSameAddress(pc::PhysicalDiskAddress* pda, pc::PhysicalDiskAddress* otherPda);
 };
-
-#endif // DISKTEST_H

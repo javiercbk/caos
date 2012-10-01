@@ -1,4 +1,4 @@
-#include "BusWritter.h"
+#include <BusWritter.h>
 
 namespace pc{
 BusWritter::BusWritter(BUS* bus){

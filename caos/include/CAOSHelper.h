@@ -1,5 +1,4 @@
-#ifndef CAOSHELPER_H
-#define CAOSHELPER_H
+#pragma once
 
 #include <string>
 
@@ -32,5 +31,3 @@ class CAOSHelper
     static CAOSHelper* instance;
     CAOSHelper();
 };
-
-#endif // CAOSHELPER_H

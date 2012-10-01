@@ -1,8 +1,7 @@
-#ifndef BASEREGISTRYTRANSLATION_H
-#define BASEREGISTRYTRANSLATION_H
+#pragma once
 
-#include "memory/TranslationStrategy.h"
-#include "memory/MemoryDirection.h"
+#include <memory/TranslationStrategy.h>
+#include <memory/MemoryDirection.h>
 
 namespace pc {
 
@@ -15,4 +14,3 @@ class BaseRegistryTranslator : public TranslationStrategy<os::MemoryDirection*, 
 };
 
 }
-#endif // BASEREGISTRYTRANSLATION_H

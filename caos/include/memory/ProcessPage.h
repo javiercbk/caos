@@ -1,8 +1,7 @@
-#ifndef PAGEFRAME_H
-#define PAGEFRAME_H
+#pragma once
 
-#include "memory/Address.h"
-#include "memory/PageDescriptor.h"
+#include <memory/Address.h>
+#include <memory/PageDescriptor.h>
 
 namespace os{
 
@@ -41,4 +40,3 @@ class ProcessPage : public Address<PageDescriptor>
 };
 
 }
-#endif // PAGEFRAME_H

@@ -1,5 +1,4 @@
-#ifndef TESTHELPER_H
-#define TESTHELPER_H
+#pragma once
 
 #include <stdlib.h>
 #include <time.h>
@@ -17,5 +16,3 @@ class TestHelper
 };
 
 }
-
-#endif // TESTHELPER_H

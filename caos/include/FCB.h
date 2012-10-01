@@ -1,10 +1,9 @@
-#ifndef FCB_H
-#define FCB_H
+#pragma once
 
 #include <string>
 #include <vector>
 
-#include "../include/PCB.h"
+#include <PCB.h>
 
 namespace os {
 
@@ -46,5 +45,3 @@ namespace os {
 	};
 
 }
-
-#endif // FCB_H

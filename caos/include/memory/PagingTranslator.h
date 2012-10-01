@@ -1,10 +1,9 @@
-#ifndef PAGINGTRANSLATOR_H
-#define PAGINGTRANSLATOR_H
+#pragma once
 
-#include "memory/TranslationStrategy.h"
-#include "memory/PageDescriptor.h"
-#include "memory/ProcessPage.h"
-#include "PCB.h"
+#include <memory/TranslationStrategy.h>
+#include <memory/PageDescriptor.h>
+#include <memory/ProcessPage.h>
+#include <PCB.h>
 
 namespace pc{
 
@@ -26,5 +25,3 @@ class PagingTranslator : public TranslationStrategy<os::ProcessPage*, os::PageDe
 };
 
 }
-
-#endif // PAGINGTRANSLATOR_H

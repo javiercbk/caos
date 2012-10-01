@@ -1,7 +1,6 @@
-#ifndef BUSWRITTER_H
-#define BUSWRITTER_H
+#pragma once
 
-#include "BUS.h"
+#include <BUS.h>
 
 namespace pc{
 
@@ -29,4 +28,3 @@ class BusWritter
 };
 
 }
-#endif // BUSWRITTER_H

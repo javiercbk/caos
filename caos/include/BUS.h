@@ -1,7 +1,6 @@
-#ifndef BUS_H
-#define BUS_H
+#pragma once
 
-#include "BusListener.h"
+#include <BusListener.h>
 #include <vector>
 
 namespace pc{
@@ -33,5 +32,3 @@ class BUS
 };
 
 }
-
-#endif // BUS_H

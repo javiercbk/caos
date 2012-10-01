@@ -1,7 +1,6 @@
-#ifndef ProcessSegment_H
-#define ProcessSegment_H
+#pragma once
 
-#include "memory/ProcessPage.h"
+#include <memory/ProcessPage.h>
 
 namespace os{
 
@@ -37,4 +36,3 @@ class ProcessSegment
 };
 
 }
-#endif // ProcessSegment_H

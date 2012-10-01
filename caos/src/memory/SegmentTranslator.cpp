@@ -1,4 +1,4 @@
-#include "SegmentTranslator.h"
+#include <SegmentTranslator.h>
 
 namespace pc {
 

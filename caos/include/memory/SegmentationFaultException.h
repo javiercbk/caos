@@ -1,7 +1,6 @@
-#ifndef SEGMENTATIONFAULTEXCEPTION_H
-#define SEGMENTATIONFAULTEXCEPTION_H
+#pragma once
 
-#include "Process.h"
+#include <Process.h>
 
 namespace os{
 
@@ -19,5 +18,3 @@ class SegmentationFaultException
 };
 
 }
-
-#endif // SEGMENTATIONFAULTEXCEPTION_H

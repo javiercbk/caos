@@ -1,4 +1,4 @@
-#include "memory/PagedMemoryManager.h"
+#include <memory/PagedMemoryManager.h>
 
 namespace os{
 
@@ -17,7 +17,6 @@ PagedMemoryManager::~PagedMemoryManager()
 {
     delete mmu;
     pageDirectory.empty();
-    delete &pageDirectory;
     delete freeMemoryManager;
 }
 
@@ -26,6 +25,10 @@ void PagedMemoryManager::allocateProcess(PCB* process){
 }
 
 void PagedMemoryManager::deallocateProcess(PCB* process){
+
+}
+
+void PagedMemoryManager::allocateBytesProcess(PCB* process, unsigned long long bytes){
 
 }
 

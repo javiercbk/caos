@@ -1,4 +1,4 @@
-#include "PCB.h"
+#include <PCB.h>
 
 namespace os {
 
@@ -13,6 +13,10 @@ namespace os {
 	}
 
   PCB::~PCB(){
+
+	  //for ( auto it = begin (this->registros); it != end (this->registros); it++ )
+		//  delete (*it);
+
     delete registros;
   }
 	unsigned int PCB::getPid() {

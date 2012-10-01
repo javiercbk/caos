@@ -1,13 +1,12 @@
-#ifndef PROCESSOR_H
-#define PROCESSOR_H
+#pragma once
 
 namespace os {
 	class Process;
 }
 
 #include <string>
-#include "Dispatcher.h"
-#include "Process.h"
+#include <Dispatcher.h>
+#include <Process.h>
 
 
 namespace pc {
@@ -71,4 +70,3 @@ namespace pc {
 	};
 
 }
-#endif // PROCESSOR_H

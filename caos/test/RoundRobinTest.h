@@ -1,12 +1,11 @@
-#ifndef ROUNDROBINTEST_H
-#define ROUNDROBINTEST_H
+#pragma once
 
 #include "gtest/gtest.h"
-#include "KernelConfig.h"
-#include "Kernel.h"
-#include "scheduler/SchedulerFactory.h"
-#include "PCB.h"
-#include "Process.h"
+#include <KernelConfig.h>
+#include <Kernel.h>
+#include <scheduler/SchedulerFactory.h>
+#include <PCB.h>
+#include <Process.h>
 #include <queue>
 
 class RoundRobinTest : public testing::Test
@@ -18,5 +17,3 @@ class RoundRobinTest : public testing::Test
 		std::queue<os::Process*> processQueue;
 		os::Process* makeRandomProcess();
 };
-
-#endif // ROUNDROBINTEST_H

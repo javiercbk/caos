@@ -1,5 +1,4 @@
-#ifndef DISK_H
-#define DISK_H
+#pragma once
 
 #include <vector>
 
@@ -35,4 +34,3 @@ class Disk
 };
 
 }
-#endif // DISK_H

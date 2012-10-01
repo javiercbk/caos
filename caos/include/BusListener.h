@@ -1,5 +1,4 @@
-#ifndef BUSLISTENER_H
-#define BUSLISTENER_H
+#pragma once
 
 namespace os{
 
@@ -20,5 +19,3 @@ class BusListener
 };
 
 }
-
-#endif // BUSLISTENER_H

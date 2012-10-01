@@ -1,8 +1,7 @@
-#ifndef SSTFTEST_H
-#define SSTFTEST_H
+#pragma once
 
 #include "gtest/gtest.h"
-#include "IO/SSTFScheduler.h"
+#include <IO/SSTFScheduler.h>
 
 #include <list>
 
@@ -18,5 +17,3 @@ class SSTFTest : public testing::Test
     int makeRandomBlock();
     int currentBlock;
 };
-
-#endif // SSTFTEST_H

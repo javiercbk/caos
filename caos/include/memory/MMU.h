@@ -1,12 +1,11 @@
-#ifndef MMU_H
-#define MMU_H
+#pragma once
 
-#include "memory/TranslationStrategy.h"
-#include "memory/SegmentationFaultException.h"
-#include "Process.h"
-#include "BusWritter.h"
-#include "memory/TLB.h"
-#include "BUS.h"
+#include <memory/TranslationStrategy.h>
+#include <memory/SegmentationFaultException.h>
+#include <Process.h>
+#include <BusWritter.h>
+#include <memory/TLB.h>
+#include <BUS.h>
 
 namespace pc{
 
@@ -25,4 +24,3 @@ class MMU : public BusWritter
 };
 
 }
-#endif // MMU_H

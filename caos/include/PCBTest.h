@@ -1,5 +1,4 @@
-#ifndef PCBTEST_H
-#define PCBTEST_H
+#pragma once
 
 
 class PCBTest
@@ -10,5 +9,3 @@ class PCBTest
     protected:
     private:
 };
-
-#endif // PCBTEST_H

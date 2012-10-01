@@ -1,7 +1,6 @@
-#ifndef ROUNDROBINSCHEDULER_H
-#define ROUNDROBINSCHEDULER_H
+#pragma once
 
-#include "scheduler/Scheduler.h"
+#include <scheduler/Scheduler.h>
 #include <queue>
 
 namespace os {
@@ -19,5 +18,3 @@ namespace os {
 	};
 
 }
-
-#endif // ROUNDROBINSCHEDULER_H

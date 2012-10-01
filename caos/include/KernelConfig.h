@@ -1,9 +1,8 @@
-#ifndef KERNELCONFIG_H
-#define KERNELCONFIG_H
+#pragma once
 
-#include "Kernel.h"
-#include "scheduler/Scheduler.h"
-#include "scheduler/SchedulerFactory.h"
+#include <Kernel.h>
+#include <scheduler/Scheduler.h>
+#include <scheduler/SchedulerFactory.h>
 
 /**
 * Esta clase configura un Kernel segun las opciones
@@ -24,5 +23,3 @@ class KernelConfig
 	private:
 		os::SchedulerType shortSchedulerType;
 };
-
-#endif // KERNELCONFIG_H

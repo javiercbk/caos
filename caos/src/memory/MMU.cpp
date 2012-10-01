@@ -1,8 +1,8 @@
-#include "memory/MMU.h"
-#include "memory/ProcessPage.h"
-#include "Processor.h"
-#include "memory/PagingTranslator.h"
-#include "memory/MemoryDirection.h"
+#include <memory/MMU.h>
+#include <memory/ProcessPage.h>
+#include <Processor.h>
+#include <memory/PagingTranslator.h>
+#include <memory/MemoryDirection.h>
 
 namespace pc{
 

@@ -1,8 +1,7 @@
-#ifndef ABSTRACTSCHEDULER_H
-#define ABSTRACTSCHEDULER_H
+#pragma once
 
 
-#include "Process.h"
+#include <Process.h>
 
 namespace os {
 
@@ -14,4 +13,3 @@ namespace os {
 	};
 
 }
-#endif // ABSTRACTSCHEDULER_H

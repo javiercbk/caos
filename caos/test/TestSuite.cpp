@@ -1,5 +1,5 @@
 #include "gtest/gtest.h"
-#include "PCBTest.h"
+#include <PCBTest.h>
 #include "RoundRobinTest.h"
 
 int main(int argc, char **argv) {

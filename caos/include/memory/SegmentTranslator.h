@@ -1,9 +1,8 @@
-#ifndef SEGMENTTRANSLATOR_H
-#define SEGMENTTRANSLATOR_H
+#pragma once
 
-#include "TranslationStrategy.h"
-#include "ProcessSegment.h"
-#include "PageDescriptor.h"
+#include <TranslationStrategy.h>
+#include <ProcessSegment.h>
+#include <PageDescriptor.h>
 
 namespace pc{
 
@@ -22,6 +21,3 @@ class SegmentTranslator : public TranslationStrategy<os::ProcessSegment*, long>
 };
 
 }
-
-#endif // SEGMENTTRANSLATOR_H
-

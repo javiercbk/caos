@@ -1,6 +1,4 @@
-#ifndef IOSCHEDULER_H
-#define IOSCHEDULER_H
-
+#pragma once
 namespace os {
 
 class IOScheduler
@@ -25,4 +23,3 @@ class IOScheduler
 };
 
 }
-#endif // IOSCHEDULER_H
