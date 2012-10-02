@@ -13,9 +13,26 @@ template<class T, class M>
 class MMU : public BusWritter
 {
   public:
-    MMU(long manageSize, TranslationStrategy<T, M>* strategy, BUS* bus);
-    ~MMU();
-    T getAddress(long virtualAddress);
+	MMU(long manageSize, TranslationStrategy<T, M>* strategy, BUS* bus) : BusWritter(bus){
+	  memSize = manageSize;
+	  transStrategy = strategy;
+	  this->bus = bus;
+	}
+    ~MMU(){
+    	delete transStrategy;
+    }
+    T getAddress(long virtualAddress){
+	  T physicalAddress = NULL;
+	  try{
+		physicalAddress = transStrategy->translateDirection(NULL, virtualAddress);
+		if(physicalAddress->getDecimalDir(transStrategy->getDescriptor()) > memSize){
+			throw new InvalidAddressException(virtualAddress);
+		}
+	  }catch(InvalidAddressException& e){
+		bus->transportSignal(SEGMENTATION_FAULT);
+	  }
+	  return physicalAddress;
+    }
   private:
     unsigned long long memSize;
     TLB<T>* tlb;

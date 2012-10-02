@@ -8,10 +8,14 @@ void RoundRobinTest::SetUp() {
 	KernelConfig* kConfig = new KernelConfig();
 	kConfig->setShortSchedulerType(os::ROUND_ROBIN);
 	kConfig->configureKernel(kernel);
+	delete kConfig;
 }
 
 void RoundRobinTest::TearDown() {
 	delete kernel;
+	for (auto it = createdProcesses.begin(); it != createdProcesses.end(); it++) {
+		delete *it;
+	}
 }
 
 os::Process* RoundRobinTest::makeRandomProcess() {
@@ -20,22 +24,21 @@ os::Process* RoundRobinTest::makeRandomProcess() {
 	int randomPid = rand() % 100 + 1;
 	os::PCB* pcb = new os::PCB(randomPid);
 	process->setPCB(pcb);
-	processQueue.push(process);
+	processQueue.push((*process));
+	createdProcesses.push_back(process);
 	return process;
 }
 
 
 TEST_F(RoundRobinTest, DefaultConstructor) {
-	os::Process* process = NULL;
 	for(int i =0; i < 10; i++) {
-			process = makeRandomProcess();
-			kernel->getShortScheduler()->pushProcess(process);
+			os::Process* process = makeRandomProcess();
+			kernel->getShortScheduler()->pushProcess((*process));
 		}
 	while(!processQueue.empty()) {
-			process = processQueue.front();
-			os::Process* sameProcess = kernel->getShortScheduler()->getNextProcess();
+			os::Process process = processQueue.front();
+			os::Process sameProcess = kernel->getShortScheduler()->getNextProcess();
 			processQueue.pop();
-			EXPECT_EQ(process->getPCB()->getPid(), sameProcess->getPCB()->getPid());
-			delete process;
+			EXPECT_EQ(process.getPCB()->getPid(), sameProcess.getPCB()->getPid());
 		}
 }

@@ -13,10 +13,10 @@ namespace os{
 class KernelMemoryManager
 {
     public:
-        virtual void allocateProcess(PCB* process) = 0;
-        virtual void deallocateProcess(PCB* process) = 0;
-        virtual void allocateBytesProcess(PCB* process, unsigned long long bytes) = 0;
-        virtual void getAddress(const PCB* process, unsigned long long memoryAddress) = 0;
+        virtual void allocateProcess(PCB& process) = 0;
+        virtual void deallocateProcess(PCB& process) = 0;
+        virtual void allocateBytesProcess(PCB& process, unsigned long long bytes) = 0;
+        virtual void getAddress(const PCB& process, unsigned long long memoryAddress) = 0;
         unsigned long long getFreeMem();
         unsigned long long getMemSize();
     protected:

@@ -13,7 +13,7 @@ class FCFSIOScheduler : public IOScheduler
     void pushBlock(int block);
     int getNextBlock();
   private:
-    std::queue<int>* blockQueue;
+    std::queue<int> blockQueue;
 
 };
 

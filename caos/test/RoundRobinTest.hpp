@@ -7,6 +7,7 @@
 #include <PCB.hpp>
 #include <Process.hpp>
 #include <queue>
+#include <vector>
 
 class RoundRobinTest : public testing::Test
 {
@@ -14,6 +15,7 @@ class RoundRobinTest : public testing::Test
 		virtual void SetUp();
 		virtual void TearDown();
 		os::Kernel* kernel;
-		std::queue<os::Process*> processQueue;
+		std::queue<os::Process> processQueue;
 		os::Process* makeRandomProcess();
+		std::vector<os::Process*> createdProcesses;
 };

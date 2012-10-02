@@ -20,18 +20,18 @@ class PagedMemoryManager : public KernelMemoryManager
 {
     public:
         PagedMemoryManager(unsigned long long memSize, int bitsDirectory, int bitsPage, int bitsOffset, int wordSize, pc::BUS* bus);
-        ~PagedMemoryManager();
-        void allocateProcess(PCB* process);
-		void deallocateProcess(PCB* process);
-		void allocateBytesProcess(PCB* process, unsigned long long bytes);
-		void getAddress(const PCB* process, unsigned long long memoryAddress);
+        virtual ~PagedMemoryManager();
+        void allocateProcess(PCB& process);
+		void deallocateProcess(PCB& process);
+		void allocateBytesProcess(PCB& process, unsigned long long bytes);
+		void getAddress(const PCB& process, unsigned long long memoryAddress);
     private:
 		unsigned long long dirCount; ///este campo es para uso interno y no existe en un SO.
 		unsigned long long pageCount; ///este campo es para uso interno y no existe en un SO.
 		int wordSize;
 		BitVectorFreePageManager* freeMemoryManager;
         pc::MMU<ProcessPage*, PageDescriptor>* mmu;///acceso directo al MMU a pesar que es un componente electronico.
-        std::vector< std::vector<ProcessPage*> > pageDirectory;///tabla de P‡ginas, esta soportada por el HW.
+        std::vector<std::vector<ProcessPage*>> pageDirectory;///tabla de P‡ginas, esta soportada por el HW.
 
 };
 

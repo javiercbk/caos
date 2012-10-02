@@ -1,6 +1,4 @@
 #include "gtest/gtest.h"
-#include <PCBTest.hpp>
-#include "RoundRobinTest.hpp"
 
 int main(int argc, char **argv) {
 	::testing::InitGoogleTest(&argc, argv);

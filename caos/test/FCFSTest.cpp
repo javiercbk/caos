@@ -6,11 +6,9 @@
 
 void FCFSTest::SetUp() {
   ioScheduler = new os::FCFSIOScheduler(0);
-  blockQueue = new std::queue<int>();
 }
 
 void FCFSTest::TearDown() {
-  delete blockQueue;
   delete ioScheduler;
 }
 
@@ -26,10 +24,10 @@ TEST_F(FCFSTest, DefaultConstructor) {
 			block = makeRandomBlock();
 			ioScheduler->pushBlock(block);
 		}
-	while(!blockQueue->empty()) {
-			block = blockQueue->front();
+	while(!blockQueue.empty()) {
+			block = blockQueue.front();
 			int sameBlock = ioScheduler->getNextBlock();
-			blockQueue->pop();
+			blockQueue.pop();
 			EXPECT_EQ(block, sameBlock);
 		}
 }

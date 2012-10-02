@@ -13,7 +13,7 @@ class SSTFScheduler : public IOScheduler
     void pushBlock(int block);
     int getNextBlock();
   private:
-    std::list<int>* blockList;
+    std::list<int> blockList;
 };
 
 }

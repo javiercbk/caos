@@ -16,23 +16,27 @@ PagedMemoryManager::PagedMemoryManager(unsigned long long memSize, int bitsDirec
 PagedMemoryManager::~PagedMemoryManager()
 {
     delete mmu;
-    pageDirectory.empty();
+    for (auto itDir = pageDirectory.begin(); itDir != pageDirectory.end(); itDir++) {
+    	for (auto itPag = (*itDir).begin(); itPag != (*itDir).end(); itPag++) {
+    		delete *itPag;
+    	}
+    }
     delete freeMemoryManager;
 }
 
-void PagedMemoryManager::allocateProcess(PCB* process){
+void PagedMemoryManager::allocateProcess(PCB& process){
 	//ProcessPage* allocatedPage = freeMemoryManager->getNextFreeSpace();
 }
 
-void PagedMemoryManager::deallocateProcess(PCB* process){
+void PagedMemoryManager::deallocateProcess(PCB& process){
 
 }
 
-void PagedMemoryManager::allocateBytesProcess(PCB* process, unsigned long long bytes){
+void PagedMemoryManager::allocateBytesProcess(PCB& process, unsigned long long bytes){
 
 }
 
-void PagedMemoryManager::getAddress(const PCB* process, unsigned long long memoryAddress){
+void PagedMemoryManager::getAddress(const PCB& process, unsigned long long memoryAddress){
 
 }
 

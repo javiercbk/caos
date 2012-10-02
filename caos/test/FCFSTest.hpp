@@ -11,6 +11,6 @@ protected:
     virtual void SetUp();
     virtual void TearDown();
     os::IOScheduler* ioScheduler;
-    std::queue<int>* blockQueue;
+    std::queue<int> blockQueue;
     int makeRandomBlock();
 };
